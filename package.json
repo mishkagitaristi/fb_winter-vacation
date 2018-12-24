@@ -1,0 +1,19 @@
+{
+  "name": "fb_winter_vacation",
+  "version": "1.0.0",
+  "description": "this is facebook web page's part (deadline 14.01.2019)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishkagitaristi/fb_winter_vacation.git"
+  },
+  "author": "M&M's",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishkagitaristi/fb_winter_vacation/issues"
+  },
+  "homepage": "https://github.com/mishkagitaristi/fb_winter_vacation#readme"
+}
