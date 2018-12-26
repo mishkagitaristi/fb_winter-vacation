@@ -1,2 +1,5 @@
-/*** Fonts Family ***/
-@include font-face('reg', '../fonts/SFUIText-Regular', ttf);
+// Fonts Family
+@include font-face('regular', '../fonts/SFUIText-Regular', null, null, woff);
+@include font-face('light', '../fonts/SFUIText-Light', null, null, woff);
+@include font-face('semibold', '../fonts/SFUIText-Semibold', null, null, woff);
+@include font-face('medium', '../fonts/SFUIText-Medium', null, null, woff);

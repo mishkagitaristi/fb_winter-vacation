@@ -1,11 +1,3 @@
-.wrapper-login {
-  margin: 0 auto;
-  width: 980px; }
-
-.wrapper {
-  margin: 0 auto;
-  width: 1012px; }
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,8 +24,7 @@ html {
   font-size: 10px; }
 
 body {
-  font-family: "reg";
-  line-height: 1; }
+  font-family: "regular"; }
 
 ol, ul {
   list-style: none; }
@@ -48,3 +39,27 @@ input[type=number]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
   margin: 0; }
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/SFUIText-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "light";
+  src: url("../fonts/SFUIText-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "semibold";
+  src: url("../fonts/SFUIText-Semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "medium";
+  src: url("../fonts/SFUIText-Medium.woff") format("woff"); }
+
+.wrapper-login {
+  margin: 0 auto;
+  width: 980px; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1012px; }
