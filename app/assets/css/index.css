@@ -42,19 +42,19 @@ input[type=number]::-webkit-outer-spin-button {
 
 @font-face {
   font-family: "regular";
-  src: url("../fonts/SFUIText-Regular.woff") format("woff"); }
+  src: url("../fonts/SFUIText-Regular.ttf") format("truetype"), url("../fonts/SFUIText-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: "light";
-  src: url("../fonts/SFUIText-Light.woff") format("woff"); }
+  src: url("../fonts/SFUIText-Light.ttf") format("truetype"), url("../fonts/SFUIText-Light.woff") format("woff"); }
 
 @font-face {
   font-family: "semibold";
-  src: url("../fonts/SFUIText-Semibold.woff") format("woff"); }
+  src: url("../fonts/SFUIText-Semibold.ttf") format("truetype"), url("../fonts/SFUIText-Semibold.woff") format("woff"); }
 
 @font-face {
   font-family: "medium";
-  src: url("../fonts/SFUIText-Medium.woff") format("woff"); }
+  src: url("../fonts/SFUIText-Medium.ttf") format("truetype"), url("../fonts/SFUIText-Medium.woff") format("woff"); }
 
 .wrapper-login {
   margin: 0 auto;
