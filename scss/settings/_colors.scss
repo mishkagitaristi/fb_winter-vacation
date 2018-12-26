@@ -1,4 +1,9 @@
-.wrapper{
-    width: 920px;
-    background: rgb(223, 131, 131);
-}
+$colors: (
+    white: #fff,
+    black: #010101,
+    light-black: #222222,
+    light-grey: #ebebeb,
+    grey: #898989,
+    accent: #fcdb00,
+    btn-hover: #dcc31a
+);
