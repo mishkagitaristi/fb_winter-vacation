@@ -44,6 +44,23 @@ input[type=number]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0; }
 
+.flex {
+  display: flex; }
+
+.fl_center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.fl_col {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.fl_jus-bet {
+  display: flex;
+  justify-content: space-between; }
+
 @font-face {
   font-family: "regular";
   src: url("../fonts/SFUIText-Regular.ttf") format("truetype"), url("../fonts/SFUIText-Regular.woff") format("woff"); }
@@ -75,17 +92,70 @@ input[type=number]::-webkit-outer-spin-button {
   width: calc(100% - 206px);
   height: auto; }
 
+body {
+  overflow-y: scroll;
+  line-height: 1.34; }
+
 .header-login {
   width: 100%;
-  height: 80px;
-  background-color: #4267b2; }
+  height: 82px;
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid #133783;
+  background-color: #3b5998;
+  background-image: linear-gradient(#4e69a2, #3b5998 50%); }
+  .header-login__container {
+    padding-top: 13px; }
   .header-login__logo {
     display: inline-block;
     width: 170px;
     height: 34px;
     margin-top: 17px;
-    background: url(../img/icons/icons-first.png) no-repeat;
+    background: url(../images/icons/icons-first-login.png) no-repeat;
     background-position: 0 0; }
+  .header-login__auth {
+    display: flex;
+    width: 392px;
+    height: 65px; }
+  .header-login .auth__item {
+    padding: 0 0 0 14px;
+    font-size: 1.2rem; }
+  .header-login .auth--mail, .header-login .auth--pass {
+    padding-top: 1px; }
+  .header-login .auth__text {
+    color: #fff;
+    font-weight: normal;
+    padding-left: 1px;
+    padding-bottom: 4px; }
+  .header-login .auth__input {
+    width: 142px;
+    padding: 3px;
+    outline: transparent;
+    border: 1px solid #bdc7d8;
+    border-color: #1d2a5b; }
+  .header-login .auth__link {
+    color: #9cb4d8;
+    cursor: pointer;
+    padding-top: 5px;
+    text-decoration: none; }
+    .header-login .auth__link:hover {
+      cursor: pointer;
+      text-decoration: underline; }
+  .header-login .auth__btn {
+    width: 50px;
+    height: 24px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    cursor: pointer;
+    outline: transparent;
+    border-radius: 2px;
+    padding: 2px 6px;
+    border: 1px solid #29487d;
+    background-color: #4267b2; }
+    .header-login .auth__btn:hover {
+      background-color: #365899; }
 
 * {
   margin: 0; }
