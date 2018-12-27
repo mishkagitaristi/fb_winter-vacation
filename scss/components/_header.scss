@@ -5,7 +5,7 @@
     left: 0;
     z-index: 100;
     width: 100%;
-    height: 63px;
+    height: 43px;
     background-color: color(blue);
     border-bottom: 1px solid #29487d;
 
@@ -14,7 +14,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 61px;
+        height: 41px;
 
         &-left{
             display: flex;
@@ -63,7 +63,7 @@
                 margin-right: 0.6rem;
             }
             &-text{
-                font-size: 1.25rem;
+                font-size: 1.2rem;
                 font-weight: 700;
                 color: color(white);
 

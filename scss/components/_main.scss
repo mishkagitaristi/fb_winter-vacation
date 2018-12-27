@@ -2,5 +2,17 @@
 .main{
     width: 100%;
     height: auto;
-    margin-top: 55px;
+    margin-top: 43px;
+
+    &__sidebar{
+        width: 180px;
+        height: 500px;
+        background-color: red;
+    }
+    &__content{
+        width: calc(100% - 180px);
+        margin-left: 10px;
+        height: 500px;
+        background-color: blue;
+    }
 }

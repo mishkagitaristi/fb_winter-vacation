@@ -1,121 +1,128 @@
 /* FRIENDS SIDEBAR */
 .sidebar{
     position: fixed;
-    top: 63px;
+    top: 43px;
     right: 0;
     width: 206px;
-    height: calc(100vh - 63px);
-    padding: 5px 0;
+    height: calc(100vh - 43px);
+    padding: 0.5rem 0;
     border-left: 1px solid #ccc;
     box-shadow: inset 2px 0 2px -2px #e0e0e0;
-}
-    /* SIDEBAR NAVIGATION */
-    .sidebar__navigation{
+
+    &__navigation{
         display: flex;
         flex-direction: column;
         height: calc(100% - 30px);
         overflow-x: hidden;
+
+        &-title{
+            display: inline-block;
+            color: color(text-grey);
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px 0 10px 7px;
+        }
     }
-        /* SIDEBAR NAVIGATION LIST */
-        /* .sidebar__navigation-list{} */
-            .sidebar__navigation-title{
-                display: inline-block;
-                color: #4a4a4a;
-                font-size: 11px;
-                font-weight: bold;
-                text-transform: uppercase;
-                padding: 10px 0 10px 7px;
-            }
-            .navigation__list-item{
-                display: block;
+}
+.navigation{
+    &__list{
+        &-item{
+            display: block;
+            height: 40px;
+        }
+        &-link{
+            display: block;
+            width: 100%;
+            margin-left: 1px;
+
+            &-inner{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
                 height: 40px;
-            }
-                .navigation__list-link{
-                    display: block;
-                    width: 100%;
-                    margin-left: 1px;
+                width: 100%;
+                padding: 0 0.7rem;
+
+                &:hover{
+                    background-color: color(grey);
                 }
-                    .navigation__list-link-inner{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: space-between;
-                        height: 40px;
-                        width: 100%;
-                        padding: 0 7px;
-                    }
-                        .navigation__list-link-inner:hover{
-                            background-color: #dddfe2;
-                        }
-                        /* SIDEBAR NAVIGATION LIST ITEM ON :HOVER WAVE */
-                        .navigation__list-link-inner:hover > 
-                        .navigation__list-right > .navigation__list-wave{
-                            display: inline-block;
-                        }
-                    .navigation__list-left{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                    }
-                    .navigation__list-right{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                    }
-                        .navigation__list-image{
-                            width: 32px;
-                            height: 32px;
-                            border-radius: 100%;
-                            overflow: hidden;
-                        }
-                            .navigation__list-image img{
-                                width: 32px;
-                                height: 32px;
-                                border-radius: 100%;
-                            }
-                        .navigation__list-text{
-                            display: flex;
-                            flex-direction: column;
-                            margin-left: 10px;
-                        }
-                            .navigation__list-name{
-                                font-size: 12px;
-                                color: #333;
-                            }
-                            .navigation__list-groupwith{
-                                font-size: 10px;
-                                color:#4b4f56;
-                                margin-top: 3px;
-                            }
-                        /* SIDEBAR NAVIGATION WAVE ICON */
-                        .navigation__list-wave{
-                            height: 21px;
-                            width: 21px;
-                            display: none;
-                            background-image: url(../images/icons/wave.png);
-                            background-size: auto;
-                            background-position: 0 0;
-                            background-repeat: no-repeat;
-                        }
-                            .navigation__list-wave:hover{
-                                background-position: 0 -22px;
-                            }
-                        .navigation__list-status{
-                            display: flex;
-                            align-items: center;
-                            margin: 0 4px 0 6px;
-                        }
-                            /* SIDEBAR NAVIGATION ONLINE STATUS */
-                            .status__online{
-                                background: rgb(66, 183, 42);
-                                border-radius: 100%;
-                                display: inline-block;
-                                height: 6px;
-                                width: 6px;
-                            }
-    /* /SIDEBAR NAVIGATION */
-    /* ONLINE FRIENDS SIDEBAR SEARCH */
-    .sidebar__search{
+            }
+        }
+        &-link-inner:hover > 
+        &-right > 
+        &-wave{
+            display: inline-block;
+        }
+
+        &-left{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &-right{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &-image{
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            overflow: hidden;
+
+            & img{
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+            }
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+            margin-left: 1em;
+        }
+        &-name{
+            font-size: 1.2rem;
+            color: #333;
+        }
+        &-groupwith{
+            font-size: 1rem;
+            color:#4b4f56;
+            margin-top: 3px;
+        }
+        &-wave{
+            height: 21px;
+            width: 21px;
+            display: none;
+            background-image: url(../images/icons/wave.png);
+            background-size: auto;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            
+            &:hover{
+                background-position: 0 -22px;
+            }
+        }
+        &-status{
+            display: flex;
+            align-items: center;
+            margin: 0 4px 0 6px;
+        }
+    }
+}
+.status__online{
+    background: rgb(66, 183, 42);
+    border-radius: 100%;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+}
+
+
+.sidebar{
+    &__search{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -124,17 +131,16 @@
         left: 0;
         height: 30px;
         width: 100%;
-        background-color: #fff;
-    }
-        /* SIDEBAR SEARCH ICON */
-        .sidebar__search-icon{
+        background-color: color(white);
+
+        &-icon{
             display: flex;
             align-items: center;
             justify-content: center;
             width: 30px;
             height: 30px;
-        }
-            .sidebar__search-icon-image{
+
+            &-image{
                 width: 12px;
                 height: 12px;
                 background-image: url(../images/icons/second_icons.png);
@@ -142,54 +148,55 @@
                 background-size: auto;
                 background-position: 0 -903px;
             }
-        /* SIDEBAR SEARCH FORM */ 
-        .sidebar__search-form{
+        }
+        &-form{
             margin-right: 10px;
             width: 80px;
             height: 30px;
-            background-color: #f5f6f7;
+            background-color: color(light-grey);
         }
-            .sidebar__search-input{
-                width: 100%;
-                height: 30px;
-                outline: none;
-                font-size: 14px;
+        &-input{
+            width: 100%;
+            height: 30px;
+            outline: none;
+            font-size: 1.4rem;
 
-            }
-            .sidebar__search-input::placeholder{
+            &::placeholder{
                 color: #aeaeaf;
             }
-        /* SIDEBAR SEARCH ICONS */
-        .sidebar__search-icons{
+        }
+        &-icons{
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 65px;
-        }
-            .sidebar__search-icons-inner{
+
+            &-inner{
                 width: 16px;
                 height: 16px;
                 background-image: url(../images/icons/second_icons.png);
                 background-repeat: no-repeat;
                 background-size: auto;
             }
-                .sidebar__search-icons-options{
-                    background-position: 0 -669px;
-                }
-                    .sidebar__search-icons-options:hover{
-                        background-position: 0 -686px;
-                    }
-                .sidebar__search-icons-message{
-                    background-position: 0 -414px;
-                }
-                    .sidebar__search-icons-message:hover{
-                        background-position: 0 -431px;
-                    }
-                .sidebar__search-icons-group{
-                    background-position: 0 -516px;
-                }
-                    .sidebar__search-icons-group:hover{
-                        background-position: 0 -533px;
-                    }
-    /* /ONLINE FRIENDS SIDEBAR SEARCH */
-/* /FRIENDS SIDEBAR */
+        }
+        &-icons-options{
+            background-position: 0 -669px;
+            &:hover{
+                background-position: 0 -686px;
+            }
+        }
+        &-icons-message{
+            background-position: 0 -414px;
+            &:hover{
+                background-position: 0 -431px;
+            }
+        }
+        &-icons-group{
+            background-position: 0 -516px;
+            &:hover{
+                background-position: 0 -533px;
+            }
+        }
+    }
+
+}
