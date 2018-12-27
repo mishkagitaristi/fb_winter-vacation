@@ -422,6 +422,7 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   justify-content: space-between;
   height: 40px;
+  width: 100%;
   padding: 0 7px; }
 
 .navigation__list-link-inner:hover {
