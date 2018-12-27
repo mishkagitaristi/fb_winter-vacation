@@ -40,6 +40,23 @@ input[type=number]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0; }
 
+.flex {
+  display: flex; }
+
+.fl_center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.fl_col {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.fl_jus-bet {
+  display: flex;
+  justify-content: space-between; }
+
 @font-face {
   font-family: "regular";
   src: url("../fonts/SFUIText-Regular.ttf") format("truetype"), url("../fonts/SFUIText-Regular.woff") format("woff"); }
@@ -135,23 +152,6 @@ body {
     background-color: #4267b2; }
     .header-login .auth__btn:hover {
       background-color: #365899; }
-
-.flex {
-  display: flex; }
-
-.fl_center {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.fl_col {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column; }
-
-.fl_jus-bet {
-  display: flex;
-  justify-content: space-between; }
 
 * {
   margin: 0; }

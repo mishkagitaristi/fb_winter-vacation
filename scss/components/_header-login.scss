@@ -77,20 +77,3 @@ body{
         }
     }
 }
-.flex{
-    display: flex;
-}
-.fl_center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.fl_col{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-.fl_jus-bet{
-    display: flex;
-    justify-content: space-between;
-}
