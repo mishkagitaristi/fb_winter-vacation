@@ -260,8 +260,91 @@ input[type=number]::-webkit-outer-spin-button {
     transform: scale(0.6);
     transform-origin: bottom right; }
 
-* {
-  margin: 0; }
+.main-login--right {
+  width: 400px; }
+
+.form__input {
+  width: 100%;
+  height: 39px;
+  font-size: 1.8rem;
+  outline: transparent;
+  margin-bottom: 10px;
+  padding: 10px 10px 8px 10px;
+  border-radius: 0.5rem;
+  border: 1px solid #bdc7d8; }
+  .form__input::placeholder {
+    color: #999; }
+
+.form__heading {
+  display: inline-block;
+  color: #1d2129;
+  font-size: 1.8rem;
+  margin: 10px 0 5px 0; }
+
+.form__dropdown {
+  font-size: 1.3rem;
+  height: 30px;
+  outline: transparent;
+  padding: 0.5rem;
+  border: 1px solid #bdc7d8; }
+
+.form__bday {
+  font-size: 1.1rem;
+  max-width: 150px;
+  margin: 2px 0 0 10px;
+  cursor: pointer;
+  color: #4267b2; }
+
+.form__checkbox div {
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 5px 0 5px 4px; }
+  .form__checkbox div:first-child {
+    margin-right: 15px; }
+
+.form__input--checkbox {
+  margin: 3px 3px 0px 5px; }
+
+.form__agreement {
+  width: 100%;
+  margin-top: 5px; }
+  .form__agreement p {
+    color: #777;
+    font-size: 1.1rem;
+    width: 316px; }
+  .form__agreement a {
+    color: #4267b2; }
+
+.form__btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.9rem;
+  font-family: 'Freight Sans Medium';
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  min-width: 194px;
+  margin: 20px 0;
+  padding: 7px 20px;
+  cursor: pointer;
+  outline: transparent;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  box-shadow: inset 0 1px 1px #a4e388;
+  background-color: #69a74e;
+  background: linear-gradient(#67ae55, #578843); }
+
+.reg_pages_msg {
+  display: block;
+  border-top: 1px solid #dddfe2;
+  color: #666;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 15px; }
+  .reg_pages_msg a {
+    color: #4267b2; }
 
 * {
   margin: 0; }
