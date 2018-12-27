@@ -1,8 +1,15 @@
-.wrapper-login{
+.wrapper-login {
+    width: 980px;
+    height: auto;
     margin: 0 auto;
-    width: 980px;   
 }
 .wrapper {
+    width: 1012px;
+    height: auto;
     margin: 0 auto;
-    width:1012px;
+}
+.container{
+    float: left;
+    width: calc(100% - 206px);
+    height: auto;
 }
