@@ -1,3 +1,59 @@
-*{
-    margin: 0;
+.footer{
+    width: 100%;
+    height: auto;
+    background: color(white);
+    padding-bottom: 55px;
+    padding-top: 30px;
+
+    &__list{
+        display: block;
+        padding-top: 8px;
+        & a {
+            color: color(blue);
+        }
+    }
+    &__list li{
+        display: inline;
+        font-size: 12px;
+        color: #737373;
+        margin-right: 10px;
+        }
+    &__plus{
+        position: relative;
+        padding: 2px 15px;
+        border: 1px solid #ccd0d5;
+        border-radius: 2px;
+        cursor: pointer;
+        }
+    &__plus::before{
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 12px;
+        height: 12px;
+        background-position: -39px -382px;
+        background-image: url(../images/icons/icons-third-login.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
 }
+.break-line{
+    border-bottom: 1px solid color(grey);
+    font-size: .1rem;
+    height: 10px;
+    margin-bottom: 10px;
+}
+.list__second{
+    padding-top: 0;
+    line-height: 1.6;
+}
+    .list__second li{
+        margin-right: 16px;
+    }
+.copyright{
+    color: #737373;
+    font-size: 1.1rem;
+    margin: 20px 0 20px 0;
+} 
