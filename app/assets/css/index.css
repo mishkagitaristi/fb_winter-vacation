@@ -157,8 +157,50 @@ body {
     .header-login .auth__btn:hover {
       background-color: #365899; }
 
-* {
-  margin: 0; }
+.main-login {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 80px 0; }
+  .main-login--left {
+    padding-right: 48px; }
+  .main-login__heading {
+    color: #333;
+    font-size: 3.9rem;
+    font-family: 'Freight Sans Medium';
+    line-height: 4.6rem;
+    letter-spacing: 1px; }
+  .main-login__text {
+    display: inline-block;
+    color: #333;
+    font-size: 20px;
+    line-height: 126%;
+    font-family: 'Freight Sans Medium';
+    margin-bottom: 20px; }
+  .main-login__recent {
+    display: flex; }
+
+.recent__item {
+  position: relative;
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 0 17px 0 0;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px #dddfe2;
+  transition: all .2s ease-out; }
+  .recent__item:hover {
+    box-shadow: 0 1px 10px 7px #dddfe2; }
+  .recent__item:hover > .recent__btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+    transition: all 100ms cubic-bezier(0.08, 0.52, 0.52, 1);
+    transform: scale(1.5);
+    transform-origin: bottom right; }
+  .recent__item:hover > .recent__btn:after {
+    opacity: 1; }
 
 * {
   margin: 0; }
