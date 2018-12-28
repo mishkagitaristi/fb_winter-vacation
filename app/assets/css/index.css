@@ -35,23 +35,6 @@ input[type=number]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0; }
 
-.flex {
-  display: flex; }
-
-.fl_center {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.fl_col {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column; }
-
-.fl_jus-bet {
-  display: flex;
-  justify-content: space-between; }
-
 @font-face {
   font-family: "regular";
   src: url("../fonts/SFUIText-Regular.ttf") format("truetype"), url("../fonts/SFUIText-Regular.woff") format("woff"); }
@@ -67,16 +50,6 @@ input[type=number]::-webkit-outer-spin-button {
 @font-face {
   font-family: "medium";
   src: url("../fonts/SFUIText-Medium.ttf") format("truetype"), url("../fonts/SFUIText-Medium.woff") format("woff"); }
-
-.wrapper-login {
-  width: 980px;
-  height: auto;
-  margin: 0 auto; }
-
-.wrapper {
-  width: 1012px;
-  height: auto;
-  margin: 0 auto; }
 
 .container {
   float: left;
@@ -792,3 +765,30 @@ input[type=number]::-webkit-outer-spin-button {
     background-position: 0 -516px; }
     .sidebar__search-icons-group:hover {
       background-position: 0 -533px; }
+
+.flex {
+  display: flex; }
+
+.fl_center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.fl_col {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.fl_jus-bet {
+  display: flex;
+  justify-content: space-between; }
+
+.wrapper-login {
+  width: 980px;
+  height: auto;
+  margin: 0 auto; }
+
+.wrapper {
+  width: 1012px;
+  height: auto;
+  margin: 0 auto; }
