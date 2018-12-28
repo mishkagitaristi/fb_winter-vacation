@@ -43,6 +43,7 @@
             margin-top: 12px;
         }
         &-btn{
+            cursor: pointer;
             color: color(white);
             font-size: 1.2rem;
             font-weight: 600;
@@ -54,6 +55,10 @@
             border: 1px solid #42b72a;
             border-radius: 2px;
             background-color: #42b72a;
+            &:hover{
+                background-color: #36a420;
+                border-color: #36a420;
+            }
         }
     }
     .sidebar-list__item{
