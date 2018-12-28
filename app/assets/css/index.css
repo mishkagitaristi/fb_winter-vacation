@@ -56,6 +56,94 @@ input[type=number]::-webkit-outer-spin-button {
   width: calc(100% - 206px);
   height: auto; }
 
+.cover-button {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  color: #4b4f56;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+  padding: 0 24px;
+  border-right: 1px solid #ccd0d5;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color, 200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow, 200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform; }
+  .cover-button:hover {
+    background-color: #ebedf0; }
+  .cover-button::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    transform: translate(-50%, -50%);
+    margin-left: 14px;
+    background-image: url(../images/icons/cover_icons.png);
+    background-size: auto;
+    background-repeat: no-repeat; }
+  .cover-button::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    transform: translate(-50%, -50%);
+    margin-right: 6px;
+    background-image: url(../images/icons/cover_icons-two.png);
+    background-size: auto;
+    background-repeat: no-repeat; }
+
+.button--liked::before {
+  bottom: 2px;
+  width: 12px;
+  height: 12px;
+  background-position: -82px -789px; }
+
+.button--liked::after {
+  bottom: 6px;
+  width: 9px;
+  height: 8px;
+  background-position: -18px -575px; }
+
+.button--following::before {
+  width: 16px;
+  height: 16px;
+  bottom: -2px;
+  background-position: -49px -1120px; }
+
+.button--following::after {
+  bottom: 6px;
+  width: 9px;
+  height: 8px;
+  background-position: -18px -575px; }
+
+.button--share::before {
+  width: 12px;
+  height: 12px;
+  bottom: 2px;
+  background-position: -83px -1049px; }
+
+.button--dots {
+  color: #f5f6f7;
+  padding: 0 12px;
+  border-right: transparent; }
+  .button--dots::before {
+    width: 16px;
+    height: 16px;
+    left: 4px;
+    bottom: -3px;
+    background-position: -49px -1052px; }
+
+.cover__send-message {
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-family: "regular";
+  text-align: center;
+  border: transparent;
+  outline: transparent;
+  width: 288px;
+  height: 28px;
+  border-radius: 2px;
+  background-color: #4267b2;
+  transition: transform 100ms cubic-bezier(0, 0.7, 0.5, 1); }
+
 .header-login {
   width: 100%;
   height: 83px;
@@ -372,7 +460,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.1rem;
   margin: 20px 0 20px 0; }
 
-/* HEADER */
+/*** HEADER ***/
 .header {
   position: fixed;
   top: 0;
@@ -528,7 +616,6 @@ input[type=number]::-webkit-outer-spin-button {
       background-size: auto;
       background-position: 0 -1445px; }
 
-/* /HEADER */
 .header__sub {
   position: absolute;
   top: 43px;
@@ -651,6 +738,22 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     height: 53px;
     padding: 12px; }
+    .main__cover--bottom .cover__buttons {
+      display: flex;
+      border-radius: 2px;
+      border: 1px solid #ccd0d5;
+      background-color: #f5f6f7; }
+  .main__cover .message-icon {
+    position: relative;
+    bottom: 1px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+    background-image: url(../images/icons/cover_icons.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -74px -872px; }
 
 /* FRIENDS SIDEBAR */
 .sidebar {

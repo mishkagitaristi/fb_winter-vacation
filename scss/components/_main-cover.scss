@@ -18,5 +18,24 @@
         width: 100%;
         height: 53px;
         padding: 12px;
+
+        .cover__buttons{
+            display: flex;
+            border-radius: 2px;
+            border: 1px solid #ccd0d5;
+            background-color: #f5f6f7;
+        }
+    }
+    .message-icon{
+        position: relative;
+        bottom: 1px;
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        margin-right: 4px;
+        background-image: url(../images/icons/cover_icons.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: -74px -872px;
     }
 }
