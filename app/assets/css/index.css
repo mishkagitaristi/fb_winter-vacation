@@ -563,73 +563,93 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: auto;
   margin-top: 100px; }
-  .main__sidebar {
-    width: 180px;
-    height: 500px; }
-    .main__sidebar-image {
-      display: block;
-      width: 180px;
-      height: 180px; }
-      .main__sidebar-image img {
-        width: 100%;
-        height: 100%; }
-    .main__sidebar-heading {
-      cursor: pointer;
-      font-size: 2rem;
-      font-weight: normal;
-      padding-top: 12px; }
-      .main__sidebar-heading:hover {
-        text-decoration: underline; }
-    .main__sidebar-url {
-      cursor: pointer;
-      color: #90949c;
-      font-size: 1.4rem;
-      font-family: "medium";
-      line-height: 16px;
-      margin-top: 4px; }
-      .main__sidebar-url:hover {
-        text-decoration: underline; }
-    .main__sidebar-list {
-      margin-top: 12px; }
-    .main__sidebar-btn {
-      cursor: pointer;
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: 600;
-      font-family: inherit;
-      line-height: 22px;
-      outline: transparent;
-      padding: 0 8px;
-      margin-top: 16px;
-      border: 1px solid #42b72a;
-      border-radius: 2px;
-      background-color: #42b72a; }
-      .main__sidebar-btn:hover {
-        background-color: #36a420;
-        border-color: #36a420; }
-  .main .sidebar-list__item {
-    font-size: 1.4rem;
-    font-family: "regular";
-    padding: 5px 7px;
-    margin-bottom: 2px;
-    border: 1px solid transparent; }
-    .main .sidebar-list__item:hover {
-      background: #f5f6f7;
-      border: 1px solid #dddfe2;
-      border-radius: 2px; }
-    .main .sidebar-list__item.active {
-      background: #f5f6f7;
-      border: 1px solid #dddfe2; }
-      .main .sidebar-list__item.active a {
-        font-weight: bold; }
-    .main .sidebar-list__item a {
-      display: block;
-      color: #1d2129; }
   .main__content {
     width: calc(100% - 180px);
     margin-left: 11px;
-    height: 500px;
-    background-color: blue; }
+    height: 500px; }
+
+.main__sidebar {
+  width: 180px;
+  height: 500px; }
+  .main__sidebar-image {
+    display: block;
+    width: 180px;
+    height: 180px; }
+    .main__sidebar-image img {
+      width: 100%;
+      height: 100%; }
+  .main__sidebar-heading {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: normal;
+    padding-top: 12px; }
+    .main__sidebar-heading:hover {
+      text-decoration: underline; }
+  .main__sidebar-url {
+    cursor: pointer;
+    color: #90949c;
+    font-size: 1.4rem;
+    font-family: "medium";
+    line-height: 16px;
+    margin-top: 4px; }
+    .main__sidebar-url:hover {
+      text-decoration: underline; }
+  .main__sidebar-list {
+    margin-top: 12px; }
+  .main__sidebar-btn {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    line-height: 22px;
+    outline: transparent;
+    padding: 0 8px;
+    margin-top: 16px;
+    border: 1px solid #42b72a;
+    border-radius: 2px;
+    background-color: #42b72a; }
+    .main__sidebar-btn:hover {
+      background-color: #36a420;
+      border-color: #36a420; }
+
+.main .sidebar-list__item {
+  font-size: 1.4rem;
+  font-family: "regular";
+  padding: 5px 7px;
+  margin-bottom: 2px;
+  border: 1px solid transparent; }
+  .main .sidebar-list__item:hover {
+    background: #f5f6f7;
+    border: 1px solid #dddfe2;
+    border-radius: 2px; }
+  .main .sidebar-list__item.active {
+    background: #f5f6f7;
+    border: 1px solid #dddfe2; }
+    .main .sidebar-list__item.active a {
+      font-weight: bold; }
+  .main .sidebar-list__item a {
+    display: block;
+    color: #1d2129; }
+
+.main__cover {
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid #dddfe2;
+  background-color: #fff; }
+  .main__cover--top {
+    width: 100%;
+    height: 312px;
+    background-color: aqua; }
+  .main__cover-image {
+    width: 100%;
+    height: 100%; }
+  .main__cover--bottom {
+    width: 100%;
+    height: 53px;
+    padding: 12px; }
 
 /* FRIENDS SIDEBAR */
 .sidebar {
