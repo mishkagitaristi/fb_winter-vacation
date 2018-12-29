@@ -1,0 +1,192 @@
+.article{
+    border-radius: 4px;
+    width: 100%;
+    background: color(white);
+    border: 1px solid #dddfe2;
+
+    &__heading{
+        width: 100%;
+        height: 43px;
+        margin: 10px 0;
+        padding:0 12px 0 12px;
+    }
+    &__top{
+        &-author{
+            width: 40px;
+            height: 40px;
+            &-img{
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+            }
+        }
+        &-text{
+            margin-left: 10px;
+        }
+        &-heading{
+            & a{
+                font-size: 14px;
+                font-weight: 600;
+                color: #365899;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        &-time{
+            position: relative;
+            & a{
+                font-size: 12px;
+                color: #616770;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                right: -20px;
+                width: 12px;
+                height: 12px;
+                background-image: url(../images/icons/sixth_icons.png);
+                background-size: auto;
+                background-repeat: no-repeat;
+                background-position: -13px -338px;
+            }
+        }
+        &-right{
+            height: 20px;
+            width: 20px;
+        }
+        &-dots{
+            height: 20px;
+            width: 20px;
+            background-image: url(../images/icons/fourth_icons.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: -192px -245px;
+            &:hover{
+                background-position: -234px -245px;
+            }
+        }
+    }
+    &__center{
+        align-items: center;
+        &-image{
+            width: 100%;
+            height: auto;
+        }
+        &-inner{
+            justify-content: space-around;
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+
+    }
+    &__footer{
+        width: 100%;
+        height: 42px;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 5px 10px;
+        &-icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+        &-button{
+            flex: 1 100%;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            &:hover{
+                background-color: rgba(29, 33, 41, .04);
+            }
+        }
+        &-icon{
+            position: relative;
+            font-size: 13px;
+            font-weight: 600;
+            color: #616770;
+            margin-left: 25px;
+            &::before{
+                position: absolute;
+                content: "";
+                top: -3px;
+                left: -25px;
+                width: 18px;
+                height: 18px;
+                background-image: url(../images/icons/seventh_icons.png);
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+        }
+        &-comment{
+            &::before{
+                background-position: -19px -198px;
+            }
+        }
+        &-like{
+            &::before{
+                background-position: -318px -245px;
+                background-image: url(../images/icons/fourth_icons.png);
+            }
+        }
+        &-share{
+            &::before{
+                background-position: 0 -293px;
+            }
+        }
+    }
+}
+
+
+
+.center{
+    &-left{
+        &-icons{
+            width: 20px;
+            height: 20px;
+            border: 2px solid white;
+            border-radius: 100%;
+            background-image: url(../images/icons/seventh_icons.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        &-numbers{
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            color: #606770;
+            line-height: 20px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &-right{
+        &-shares{
+            font-size: 12px;
+            color: #606770;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.left{
+    &-icons{
+        &-like{
+            background-position: -17px -526px;
+            margin-right: -4px;z-index: 1;
+        }
+        &-love{
+            background-position: 0 -509px;
+        }
+    }
+}
