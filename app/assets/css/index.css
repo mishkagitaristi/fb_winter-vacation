@@ -97,7 +97,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 170px;
     height: 34px;
     margin-top: 17px;
-    background: url(../images/icons/icons-first-login.png) no-repeat;
+    background: url(../images/icons/login-first.png) no-repeat;
     background-position: 0 0; }
   .header-login__auth {
     display: flex;
@@ -208,7 +208,7 @@ input[type=number]::-webkit-outer-spin-button {
     transform: translate(-50%, -50%);
     width: 42px;
     height: 42px;
-    background-image: url(../images/icons/icons-second-login.png);
+    background-image: url(../images/icons/login-second.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 0 0; }
@@ -240,7 +240,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 2px;
     width: 12px;
     height: 12px;
-    background-image: url(../images/icons/icons-first-login.png);
+    background-image: url(../images/icons/login-first.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: -13px -87px;
@@ -252,7 +252,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 2px;
     width: 20px;
     height: 20px;
-    background-image: url(../images/icons/icons-first-login.png);
+    background-image: url(../images/icons/login-first.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: -121px -35px;
@@ -377,7 +377,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 12px;
     height: 12px;
     background-position: -39px -382px;
-    background-image: url(../images/icons/icons-third-login.png);
+    background-image: url(../images/icons/login-third.png);
     background-size: auto;
     background-repeat: no-repeat; }
 
@@ -463,7 +463,7 @@ input[type=number]::-webkit-outer-spin-button {
       .header__inner-right .right-icons {
         width: 24px;
         height: 24px;
-        background: url(../images/icons/default_icons.png) no-repeat;
+        background: url(../images/icons/main-first.png) no-repeat;
         background-size: auto;
         transition: 0.35s;
         opacity: .6; }
@@ -506,7 +506,7 @@ input[type=number]::-webkit-outer-spin-button {
       display: block;
       width: 24px;
       height: 24px;
-      background-image: url(../images/icons/default_icons.png);
+      background-image: url(../images/icons/main-first.png);
       background-size: auto;
       background-position: 0 -442px; }
   .header__search-form {
@@ -551,7 +551,7 @@ input[type=number]::-webkit-outer-spin-button {
     .header__search-button-icon {
       width: 14px;
       height: 14px;
-      background: url(../images/icons/default_icons.png) no-repeat;
+      background: url(../images/icons/main-first.png) no-repeat;
       background-size: auto;
       background-position: 0 -1445px; }
 
@@ -689,7 +689,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 16px;
     width: 16px;
     margin-right: 4px;
-    background-image: url(../images/icons/cover_icons.png);
+    background-image: url(../images/icons/cover-first.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -74px -872px; }
@@ -779,7 +779,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 21px;
   width: 21px;
   display: none;
-  background-image: url(../images/icons/wave.png);
+  background-image: url(../images/icons/friendlist-wave.png);
   background-size: auto;
   background-position: 0 0;
   background-repeat: no-repeat; }
@@ -817,7 +817,7 @@ input[type=number]::-webkit-outer-spin-button {
     .sidebar__search-icon-image {
       width: 12px;
       height: 12px;
-      background-image: url(../images/icons/second_icons.png);
+      background-image: url(../images/icons/friendlist-first.png);
       background-repeat: no-repeat;
       background-size: auto;
       background-position: 0 -903px; }
@@ -841,7 +841,7 @@ input[type=number]::-webkit-outer-spin-button {
     .sidebar__search-icons-inner {
       width: 16px;
       height: 16px;
-      background-image: url(../images/icons/second_icons.png);
+      background-image: url(../images/icons/friendlist-first.png);
       background-repeat: no-repeat;
       background-size: auto; }
   .sidebar__search-icons-options {
@@ -958,7 +958,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 5px 0 10px;
     display: inline-block;
     vertical-align: bottom;
-    background-image: url(../images/icons/post-fifth_icons.png);
+    background-image: url(../images/icons/post-fisrt.png);
     background-size: auto;
     background-repeat: no-repeat; }
 
@@ -977,7 +977,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 20px;
     width: 20px;
     margin: 0 5px 0 0;
-    background-image: url(../images/icons/post-third_icons.png);
+    background-image: url(../images/icons/post-second.png);
     background-size: auto;
     background-repeat: no-repeat; }
 
@@ -988,7 +988,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-position: -34px -361px; }
 
 .icons_live-video::before {
-  background-image: url(../images/icons/post-third_icons.png);
+  background-image: url(../images/icons/post-second.png);
   background-position: 0 -2503px; }
 
 .icons_photo-video::before {
@@ -1013,7 +1013,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 20px;
     width: 20px;
     margin: 0 0 0 5px;
-    background-image: url(../images/icons/post-third_icons.png);
+    background-image: url(../images/icons/post-second.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 0 -2235px; }
@@ -1057,7 +1057,7 @@ input[type=number]::-webkit-outer-spin-button {
       right: -20px;
       width: 12px;
       height: 12px;
-      background-image: url(../images/icons/sixth_icons.png);
+      background-image: url(../images/icons/article-first.png);
       background-size: auto;
       background-repeat: no-repeat;
       background-position: -13px -338px; }
@@ -1067,7 +1067,7 @@ input[type=number]::-webkit-outer-spin-button {
   .article__top-dots {
     height: 20px;
     width: 20px;
-    background-image: url(../images/icons/fourth_icons.png);
+    background-image: url(../images/icons/article-second.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -192px -245px; }
@@ -1114,14 +1114,14 @@ input[type=number]::-webkit-outer-spin-button {
         left: -25px;
         width: 18px;
         height: 18px;
-        background-image: url(../images/icons/seventh_icons.png);
+        background-image: url(../images/icons/article-third.png);
         background-repeat: no-repeat;
         background-size: auto; }
     .article__footer-comment::before {
       background-position: -19px -198px; }
     .article__footer-like::before {
       background-position: -318px -245px;
-      background-image: url(../images/icons/fourth_icons.png); }
+      background-image: url(../images/icons/article-second.png); }
     .article__footer-share::before {
       background-position: 0 -293px; }
 
@@ -1130,7 +1130,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 20px;
   border: 2px solid white;
   border-radius: 100%;
-  background-image: url(../images/icons/seventh_icons.png);
+  background-image: url(../images/icons/article-third.png);
   background-repeat: no-repeat;
   background-size: auto; }
 
@@ -1177,7 +1177,7 @@ input[type=number]::-webkit-outer-spin-button {
     left: 0;
     transform: translate(-50%, -50%);
     margin-left: 14px;
-    background-image: url(../images/icons/cover_icons.png);
+    background-image: url(../images/icons/cover-first.png);
     background-size: auto;
     background-repeat: no-repeat; }
   .cover-button::after {
@@ -1186,7 +1186,7 @@ input[type=number]::-webkit-outer-spin-button {
     right: 0;
     transform: translate(-50%, -50%);
     margin-right: 6px;
-    background-image: url(../images/icons/cover_icons-two.png);
+    background-image: url(../images/icons/cover-second.png);
     background-size: auto;
     background-repeat: no-repeat; }
 
