@@ -402,5 +402,44 @@ let template = {
                 </div>
             </div>
         </aside>
-    </main>`
+    </main>
+    <div class="msgcontainer">
+        <div class="msg__header">
+            <span class="msg__header__name">მიხეილ მამნიაშვილი</span>
+            <div class="msg__header__rightside">
+                <button class="msg__header__rightside-item msg__header__rightside-vcall"></button>
+                <button class="msg__header__rightside-item msg__header__rightside-call"></button>
+                <button class="msg__header__rightside-item msg__header__rightside-settings"></button>
+                <button class="msg__header__rightside-item msg__header__rightside-close"></button>
+            </div>
+        </div>
+        <div class="msg__body"></div>
+        <div class="msg__textarea">
+            <textarea type="text" class="msg__input" placeholder="Type a message ..."></textarea>
+            <div class="msg__bottom">
+                <nav class="msg__bottom-nav">
+                    <ul class="msg__bottom-nav-list">
+                        <li class="msg__bottom-nav-item msg__bottom-nav-photos"></li>
+                        <li class="msg__bottom-nav-item msg__bottom-nav-sticker"></li>
+                        <li class="msg__bottom-nav-item msg__bottom-nav-gif"></li>
+                        <li class="msg__bottom-nav-item msg__bottom-nav-emoji"></li>
+                        <li class="msg__bottom-nav-item msg__bottom-nav-game"></li>
+                        <li class="msg__bottom-nav-item msg__bottom-nav-file"></li>
+                        <li class="msg__bottom-nav-item msg__bottom-nav-picture"></li>
+                    </ul>
+                </nav>
+                <a href="#1" class="msg__bottom-nav-like msg__bottom-nav-item">
+                    <svg width="16" height="16" viewBox="0 0 32 32">                      
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g style="fill: transparent; stroke: rgb(0, 132, 255); opacity: 0.2;"></g>
+                                <g transform="translate(1.000000, 0.000000)">
+                                    <path d="M7.195,29.2559 L0.804,29.2559 C0.362,29.2559 0,28.8939 0,28.4509 L0,13.0609 C0,12.6179 0.362,12.2559 0.804,12.2559 L7.195,12.2559 C7.637,12.2559 8,12.6179 8,13.0609 L8,28.4509 C8,28.8939 7.637,29.2559 7.195,29.2559 Z" id="Stroke-172" stroke="#0084ff" stroke-width="2"></path><path d="M15.9694,0 L15.9694,0 C14.6414,0 13.5214,0.568 13.0414,1.097 L12.4654,1.732 L12.5184,2.63 L12.8154,6.635 C12.8204,6.692 12.8074,6.749 12.7804,6.8 L9.5534,12.791 L8.1544,13.443 L6.9994,13.982 L6.9994,15.256 L6.9994,25.256 L6.9994,27.256 L8.5914,27.256 C8.7024,27.35 8.8354,27.47 8.9364,27.562 C9.1404,27.747 9.3424,27.928 9.5324,28.078 C10.4784,28.825 11.8634,29.174 12.8444,29.25 L12.9214,29.256 L12.9994,29.256 L23.3374,29.256 C25.3594,29.256 26.7824,28.521 27.5704,27.072 C28.0124,26.258 28.1384,25.438 28.0904,24.695 C28.9084,24.168 29.5624,23.33 29.7984,22.148 C29.9184,21.549 29.8984,20.985 29.7854,20.474 C30.4514,19.814 30.9374,18.865 30.9374,17.581 C30.9374,16.549 30.6654,15.739 30.2574,15.123 C30.4314,14.637 30.5364,14.081 30.5364,13.459 C30.5364,10.906 28.4954,9.256 25.3374,9.256 L21.0124,9.256 C21.1474,8.379 21.2494,7.521 21.2494,6.931 C21.2494,4.646 20.4484,1.775 18.2014,0.569 C17.4974,0.191 16.7464,0 15.9694,0 M15.9694,2 C16.3574,2 16.7974,2.085 17.2564,2.332 C18.6054,3.056 19.2494,5.021 19.2494,6.931 C19.2494,7.863 18.8974,9.829 18.7254,10.731 C18.6784,10.978 18.8684,11.256 19.1184,11.256 L25.3374,11.256 C26.2704,11.256 28.5364,11.456 28.5364,13.459 C28.5364,14.979 27.5584,15.534 27.5584,15.534 C27.5584,15.534 28.9374,15.673 28.9374,17.581 C28.9374,19.489 27.0854,19.682 27.0854,19.682 C27.0854,19.682 28.0924,20.481 27.8374,21.756 C27.5284,23.3 26.0264,23.391 25.6764,23.391 C25.6294,23.391 25.6044,23.389 25.6044,23.389 C25.6044,23.389 26.5714,24.723 25.8124,26.118 C25.5674,26.57 25.0414,27.256 23.3374,27.256 L12.9994,27.256 C12.2824,27.2 11.3154,26.937 10.7734,26.51 C10.1994,26.056 9.5134,25.256 8.9994,25.256 L8.9994,15.256 L10.6304,14.494 C10.8704,14.383 11.0674,14.197 11.1934,13.965 L14.5404,7.748 C14.7494,7.362 14.8424,6.924 14.8104,6.486 L14.5124,2.482 C14.5114,2.465 14.5114,2.453 14.5234,2.44 C14.5964,2.359 15.1744,2 15.9694,2" id="Fill-174" fill="#0084ff"></path>
+                                </g>
+                            </g>
+                        </svg>
+                </a>
+            </div>
+        </div>
+    </div>`
+    
 }
