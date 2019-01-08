@@ -979,6 +979,19 @@ input[type=number]::-webkit-outer-spin-button {
     background-size: auto;
     background-repeat: no-repeat; }
 
+.articles__post-button {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 18px;
+  padding: 6px 15px;
+  margin-left: 40px;
+  background-color: #2d4d8d; }
+  .articles__post-button:hover {
+    background-color: #4267b2 !important; }
+
 .icons_make-post:before {
   background-position: -17px -361px; }
 
@@ -997,24 +1010,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .icons_feeling-activity::before {
   background-position: 0 -870px; }
-
-.icons_three-dots {
-  width: 50px;
-  height: 32px;
-  border-radius: 18px;
-  padding: 5px 15px 5px 10px;
-  background-color: #f5f6f7; }
-  .icons_three-dots::before {
-    display: flex;
-    align-items: center;
-    content: '';
-    height: 20px;
-    width: 20px;
-    margin: 0 0 0 5px;
-    background-image: url(../images/icons/post-second.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 0 -2235px; }
 
 .article {
   border-radius: 4px;

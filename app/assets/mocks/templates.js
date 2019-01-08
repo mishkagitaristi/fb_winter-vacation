@@ -19,7 +19,6 @@ let template = {
         </div>
     </div>
     </header>
-
     <main class="main-login">
     <div class="wrapper-login fl_jus-bet">
             <div class="main-login--left">
@@ -134,64 +133,62 @@ let template = {
             </div>
         </div>
     </main>
-
     <footer class="footer">
-    <div class="wrapper-login">
-        <ul class="footer__list">
-            <li>English (US)</li>
-            <li><a href="#">ქართული</a></li>
-            <li><a href="#">Русский</a></li>
-            <li><a href="#">Türkçe</a></li>
-            <li><a href="#">Deutsch</a></li>
-            <li><a href="#">Azərbaycan dili</a></li>
-            <li><a href="#">العربية</a></li>
-            <li><a href="#">Français (France)</a></li>
-            <li><a href="#">Ελληνικά</a></li>
-            <li><a href="#">Español</a></li>
-            <li><a href="#">Português (Brasil)</a></li>
-            <li class="footer__plus"></li>
-        </ul>
-        <div class="break-line"></div>
-        <ul class="footer__list list__second">
-            <li><a href="#" title="Sign Up for Facebook">Sign Up</a></li>
-            <li><a href="#" title="Log into Facebook">Log In</a></li>
-            <li><a href="#" title="Check out Messenger.">Messenger</a></li>
-            <li><a href="#" title="Facebook Lite for Android.">Facebook Lite</a></li>
-            <li><a href="#" title="Check out Facebook Mobile.">Mobile</a></li>
-            <li><a href="#" title="Find anyone on the web.">Find Friends</a></li>
-            <li><a href="#" title="Browse our people directory.">People</a></li>
-            <li><a href="#" title="Browse our pages directory.">Pages</a></li>
-            <li><a href="#">Page Categories</a></li>
-            <li><a href="#" title="Check out popular places on Facebook.">Places</a></li>
-            <li><a href="#" title="Check out Facebook games.">Games</a></li>
-            <li><a href="#" title="Browse our places directory.">Locations</a></li>
-            <li><a href="#" title="Browse our marketplace product directory.">Marketplace</a></li>
-            <li><a href="#" title="Browse our Groups directory.">Groups</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#" title="Browse our Local Lists directory.">Local</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Create Ad</a></li>
-            <li><a href="#" title="Create a Page">Create Page</a></li>
-            <li><a href="#" title="Develop on our platform.">Developers</a></li>
-            <li><a href="#" title="Make your next career move to our awesome company.">Careers</a></li>
-            <li><a href="#" title="Learn about your privacy and Facebook.">Privacy</a></li>
-            <li><a href="#" title="Learn about cookies and Facebook.">Cookies</a></li>
-            <li><a href="#">Ad Choices</a></li>
-            <li><a href="#" title="Review our terms and policies.">Terms</a></li>
-            <li><a href="#">Account Security</a></li>
-            <li><a href="#">Login Help</a></li>
-            <li><a href="#" title="Visit our Help Center.">Help</a></li>
-        </ul>
-        <div class="copyright">Facebook © 2018</div>
-    </div>
+        <div class="wrapper-login">
+            <ul class="footer__list">
+                <li>English (US)</li>
+                <li><a href="#">ქართული</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">Türkçe</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Azərbaycan dili</a></li>
+                <li><a href="#">العربية</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><a href="#">Ελληνικά</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li class="footer__plus"></li>
+            </ul>
+            <div class="break-line"></div>
+            <ul class="footer__list list__second">
+                <li><a href="#" title="Sign Up for Facebook">Sign Up</a></li>
+                <li><a href="#" title="Log into Facebook">Log In</a></li>
+                <li><a href="#" title="Check out Messenger.">Messenger</a></li>
+                <li><a href="#" title="Facebook Lite for Android.">Facebook Lite</a></li>
+                <li><a href="#" title="Check out Facebook Mobile.">Mobile</a></li>
+                <li><a href="#" title="Find anyone on the web.">Find Friends</a></li>
+                <li><a href="#" title="Browse our people directory.">People</a></li>
+                <li><a href="#" title="Browse our pages directory.">Pages</a></li>
+                <li><a href="#">Page Categories</a></li>
+                <li><a href="#" title="Check out popular places on Facebook.">Places</a></li>
+                <li><a href="#" title="Check out Facebook games.">Games</a></li>
+                <li><a href="#" title="Browse our places directory.">Locations</a></li>
+                <li><a href="#" title="Browse our marketplace product directory.">Marketplace</a></li>
+                <li><a href="#" title="Browse our Groups directory.">Groups</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#" title="Browse our Local Lists directory.">Local</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Create Ad</a></li>
+                <li><a href="#" title="Create a Page">Create Page</a></li>
+                <li><a href="#" title="Develop on our platform.">Developers</a></li>
+                <li><a href="#" title="Make your next career move to our awesome company.">Careers</a></li>
+                <li><a href="#" title="Learn about your privacy and Facebook.">Privacy</a></li>
+                <li><a href="#" title="Learn about cookies and Facebook.">Cookies</a></li>
+                <li><a href="#">Ad Choices</a></li>
+                <li><a href="#" title="Review our terms and policies.">Terms</a></li>
+                <li><a href="#">Account Security</a></li>
+                <li><a href="#">Login Help</a></li>
+                <li><a href="#" title="Visit our Help Center.">Help</a></li>
+            </ul>
+            <div class="copyright">Facebook © 2018</div>
+        </div>
     </footer>`,
 
     loggedIn :
-    `<!-- HEADER -->
-    <header class="header">
+    `<header class="header">
         <section class="container fl_center">
             <section class="header__inner wrapper">
-                <!-- HEADER LEFT PART -->
+                
                 <div class="header__inner-left">
                     <h1 class="header__logo"><a href="#" title="Facebook - Social Network"></a></h1>
                     <form class="header__search-form" action="#">
@@ -201,9 +198,7 @@ let template = {
                         </button>
                     </form>
                 </div>
-                <!-- /HEADER LEFT PART -->
 
-                <!-- HEADER RIGHT PART -->
                 <div class="header__inner-right">
                     <!-- HEADER RIGHT FIRST PART -->
                     <div class="header__inner-right-item">
@@ -225,9 +220,7 @@ let template = {
                         </a>
                         <span class="header__inner-right-border"></span>
                     </div>
-                    <!-- /HEADER RIGHT FIRST PART -->
 
-                    <!-- HEADER RIGHT ICONS PART -->
                     <div class="header__inner-right-item right-item-second">
                         <a href="#" class="header__inner-right-icons" title="Friend Requests">
                             <i class="right-icons right-icons-friends"></i>
@@ -239,9 +232,7 @@ let template = {
                             <i class="right-icons right-icons-notifications"></i>
                         </a>
                     </div>
-                    <!-- /HEADER RIGHT ICONS PART -->
 
-                    <!-- HEADER RIGHT LAST PART -->
                     <div class="header__inner-right-item right-item-third">
                         <span class="header__inner-right-border"></span>
                         <a href="#" class="header__inner-right-icons" title="Quick Help">
@@ -251,12 +242,12 @@ let template = {
                             <i class="right-icons right-icons-dropdown"></i>
                         </a>
                     </div>
-                    <!-- /HEADER RIGHT LAST PART -->
+
                 </div>
-                <!-- /HEADER RIGHT PART -->
             </section>
         </section>
     </header>
+
     <section class="header__sub">
         <div class="wrapper fl_jus-bet">
             <div class="header__sub--left fl_center">
@@ -277,9 +268,7 @@ let template = {
             </div>
         </div>
     </section>
-    <!-- /HEADER -->
 
-    <!-- MAIN SECTION -->
     <main class="main">
         <section class="container">
             <section class="main__inner wrapper fl_jus-bet">
@@ -330,7 +319,7 @@ let template = {
                                         <img src="./assets/images/profile_img.jpg" alt="Profile Image" width="40px" height="40px">
                                     </div>
                                     <form action="#" class="section-articles__post-center-form">
-                                        <textarea id="textarea" onkeypress="functions.articlePost(event)" name="articles__post" placeholder="What's on your mind, მიხეილ?"></textarea>
+                                        <textarea id="textarea" name="articles__post" placeholder="What's on your mind, მიხეილ?"></textarea>
                                     </form>
                                 </div>
                                 <div class="section-articles__post-breakline"></div>
@@ -338,7 +327,7 @@ let template = {
                                     <a href="#" class="articles__post-bottom-icon icons_photo-video">Photo/Video</a>
                                     <a href="#" class="articles__post-bottom-icon icons_tag-friends">Tag Friends</a>
                                     <a href="#" class="articles__post-bottom-icon icons_feeling-activity">Feeling/Activ...</a>
-                                    <a href="#" class="icons_three-dots"></a>
+                                    <a href="javascript:void(0)" class="articles__post-button" onclick="functions.articlePost()">Post</a>
                                 </div>
                             </div>
                             <div id="articles" style="width:100%"></div>
@@ -352,114 +341,66 @@ let template = {
         </section>
 
         <aside class="sidebar">
-                <nav class="sidebar__navigation">
-                    <ul class="sidebar__navigation-list">
-                        <li class="navigation__list-item">
-                            <a href="#" class="navigation__list-link">
-                                <div class="navigation__list-link-inner">
-                                    <div class="navigation__list-left">
-                                        <div class="navigation__list-image">
-                                            <img src="./assets/images/profile_img.jpg" alt="">
-                                        </div>
-                                        <div class="navigation__list-text">
-                                            <span class="navigation__list-name">მიხეილ გიგაური</span>
-                                        </div>
+            <nav class="sidebar__navigation">
+                <ul class="sidebar__navigation-list">
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__list-link">
+                            <div class="navigation__list-link-inner">
+                                <div class="navigation__list-left">
+                                    <div class="navigation__list-image">
+                                        <img src="./assets/images/profile_img.jpg" alt="">
                                     </div>
-                                    <div class="navigation__list-right">
-                                        <div class="navigation__list-wave"></div>
-                                        <div class="navigation__list-status">
-                                            <span class="status__online"></span>
-                                        </div>
+                                    <div class="navigation__list-text">
+                                        <span class="navigation__list-name">მიხეილ გიგაური</span>
                                     </div>
                                 </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <h3 class="sidebar__navigation-title">Group Conversations</h3>
-                    <ul class="sidebar__navigation-list">
-                        <li class="navigation__list-item">
-                            <a href="#" class="navigation__list-link">
-                                <div class="navigation__list-link-inner">
-                                    <div class="navigation__list-left">
-                                        <div class="navigation__list-image">
-                                            <img src="./assets/images/profile_img.jpg" alt="">
-                                        </div>
-                                        <div class="navigation__list-text">
-                                            <span class="navigation__list-name">მიხეილ გიგაური</span>
-                                            <span class="navigation__list-groupwith">Gio, Nick</span>
-                                        </div>
-                                    </div>
-                                    <div class="navigation__list-right">
-                                        <div class="navigation__list-status">
-                                            <span class="status__online"></span>
-                                        </div>
+                                <div class="navigation__list-right">
+                                    <div class="navigation__list-wave"></div>
+                                    <div class="navigation__list-status">
+                                        <span class="status__online"></span>
                                     </div>
                                 </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="sidebar__search">
-                    <div class="sidebar__search-icon">
-                        <span class="sidebar__search-icon-image"></span>
-                    </div>
-                    <form class="sidebar__search-form" action="#">
-                        <input class="sidebar__search-input" type="search" placeholder="Search">
-                    </form>
-                    <div class="sidebar__search-icons">
-                        <a href="#" class="sidebar__search-icons-inner sidebar__search-icons-options"></a>
-                        <a href="#" class="sidebar__search-icons-inner sidebar__search-icons-message"></a>
-                        <a href="#" class="sidebar__search-icons-inner sidebar__search-icons-group"></a>
-                    </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <h3 class="sidebar__navigation-title">Group Conversations</h3>
+                <ul class="sidebar__navigation-list">
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__list-link">
+                            <div class="navigation__list-link-inner">
+                                <div class="navigation__list-left">
+                                    <div class="navigation__list-image">
+                                        <img src="./assets/images/profile_img.jpg" alt="">
+                                    </div>
+                                    <div class="navigation__list-text">
+                                        <span class="navigation__list-name">მიხეილ გიგაური</span>
+                                        <span class="navigation__list-groupwith">Gio, Nick</span>
+                                    </div>
+                                </div>
+                                <div class="navigation__list-right">
+                                    <div class="navigation__list-status">
+                                        <span class="status__online"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar__search">
+                <div class="sidebar__search-icon">
+                    <span class="sidebar__search-icon-image"></span>
                 </div>
-            </aside>
-            <!-- /ONLINE FRIENDS SECTION -->
-        </main>
-        <!-- /MAIN SECTION -->`,
-
-
-    article :
-    `<article class="article">
-    <div class="article__heading fl_jus-bet">
-        <div class="article__top-left fl_center">
-            <div class="article__top-author">
-                <a href="#"><img src="./assets/images/author_img.jpg" alt="Author Image" class="article__top-author-img"></a>
+                <form class="sidebar__search-form" action="#">
+                    <input class="sidebar__search-input" type="search" placeholder="Search">
+                </form>
+                <div class="sidebar__search-icons">
+                    <a href="#" class="sidebar__search-icons-inner sidebar__search-icons-options"></a>
+                    <a href="#" class="sidebar__search-icons-inner sidebar__search-icons-message"></a>
+                    <a href="#" class="sidebar__search-icons-inner sidebar__search-icons-group"></a>
+                </div>
             </div>
-            <div class="article__top-text">
-                <h2 class="article__top-heading"><a href="#">В мире интересного</a></h2>
-                <span class="article__top-time"><a href="#">14 hrs</a></span>
-            </div>
-        </div>
-        <div class="article__top-right fl_center">
-            <a href="#" class="article__top-dots"></a>
-        </div>
-    </div>
-    <div class="article__center fl_col">
-        <div class='article__center-text' id="postText"></div>
-        <div class="article__center-inner flex">
-            <div class="article__center-left fl_center">
-                <a href="#" class="center-left-icons left-icons-like"></a>
-                <a href="#" class="center-left-icons left-icons-love"></a>
-                <a href="#" class="center-left-numbers">958</a>
-            </div>
-            <div class="article__center-right fl_center">
-                <a href="#" class="center-right-shares">43 Shares</a>
-            </div>
-        </div>
-    </div>
-    <div class="article__footer fl_col">
-        <div class="article__footer-icons">
-            <a href="#" class="article__footer-button fl_center">
-                <span class="article__footer-icon article__footer-like">Like</span>
-            </a>
-            <a href="#" class="article__footer-button fl_center">
-                <span class="article__footer-icon article__footer-comment">Comment</span>
-            </a>
-            <a href="#" class="article__footer-button fl_center">
-                <span class="article__footer-icon article__footer-share">Share</span>
-            </a>
-        </div>
-        <div class="article__footer-comment"></div>
-    </div>
-    </article>`,
+        </aside>
+    </main>`
 }
