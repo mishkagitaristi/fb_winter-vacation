@@ -25,7 +25,7 @@ let userData = {
     }
 }
 
-let randomUserName = {
+let randomUser = {
     randomFirstName : ['ნიკა', 'გიგა', 'დათო','გოჩა','სოსო','გივი','გური','ნანა','ნელი','ქეთო','ვიგა','მარი'],
     randomLastName : ['გიგაური','Smith', 'ალუბლაძე','კირთაძე','მამოიანი','Barney', 'ჰაეს?']
 };

@@ -24,9 +24,9 @@ let functions = {
     randomNumber : function(num){
         return Math.floor(Math.random() * num) + 1;
     },
-    randomUserName : function(){
-        let randomFirstName = randomUserName.randomFirstName[Math.floor(Math.random()*randomUserName.randomFirstName.length)];
-        let randomLastName = randomUserName.randomLastName[Math.floor(Math.random()*randomUserName.randomLastName.length)];
+    randomUser : function(){
+        let randomFirstName = randomUser.randomFirstName[Math.floor(Math.random()*randomUser.randomFirstName.length)];
+        let randomLastName = randomUser.randomLastName[Math.floor(Math.random()*randomUser.randomLastName.length)];
         return randomFirstName + " " + randomLastName
     },
     textAreaValue : function(){
@@ -86,9 +86,9 @@ let functions = {
     },
     articlePost : function(){
         if(functions.textAreaValue() !== '') {
-            newsfeed.unshift(
+            newsfeed.push(
                 {
-                    userName : `${functions.randomUserName()}`,
+                    userName : `${functions.randomUser()}`,
                     timeLine : `${functions.textAreaValue()}`
                 }
             )
@@ -107,7 +107,7 @@ let functions = {
                             <img src="./assets/images/avatars/img${functions.randomNumber(9)}.png">
                         </div>
                         <div class="navigation__list-text">
-                            <span class="navigation__list-name">${this.randomUserName()}</span>
+                            <span class="navigation__list-name">${this.randomUser()}</span>
                         </div>
                     </div>
                     <div class="navigation__list-right">

@@ -330,11 +330,9 @@ let template = {
                                     <a href="javascript:void(0)" class="articles__post-button" onclick="functions.articlePost()">Post</a>
                                 </div>
                             </div>
-                            <div id="articles" style="width:100%"></div>
+                            <div id="articles" style="width:100%;display:flex;flex-direction:column-reverse"></div>
                         </div>
-                        <div class="main__articles--right">
-                            
-                        </div>
+                        <div class="main__articles--right"></div>
                     </section>
                 </section>
             </section>

@@ -5,6 +5,9 @@ let newsfeed = [
     },{
         userName : 'მიხეილ მამნიაშვილი',
         timeLine : "Javascript is so Coool!"
+    },{
+        userName : 'მიხეილ გიგაური',
+        timeLine : "მშიააააააააააააააააააააააა!"
     }
 ];
 
