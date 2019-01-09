@@ -342,6 +342,8 @@ let template = {
 
         <aside class="sidebar">
             <nav class="sidebar__navigation">
+                <ul class="sidebar__navigation-list" id="friendlist"></ul>
+                <h3 class="sidebar__navigation-title">Group Conversations</h3>
                 <ul class="sidebar__navigation-list">
                     <li class="navigation__list-item">
                         <a href="#" class="navigation__list-link">
@@ -352,10 +354,10 @@ let template = {
                                     </div>
                                     <div class="navigation__list-text">
                                         <span class="navigation__list-name">მიხეილ გიგაური</span>
+                                        <span class="navigation__list-groupwith">Gio, Nick</span>
                                     </div>
                                 </div>
                                 <div class="navigation__list-right">
-                                    <div class="navigation__list-wave"></div>
                                     <div class="navigation__list-status">
                                         <span class="status__online"></span>
                                     </div>
@@ -363,9 +365,26 @@ let template = {
                             </div>
                         </a>
                     </li>
-                </ul>
-                <h3 class="sidebar__navigation-title">Group Conversations</h3>
-                <ul class="sidebar__navigation-list">
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__list-link">
+                            <div class="navigation__list-link-inner">
+                                <div class="navigation__list-left">
+                                    <div class="navigation__list-image">
+                                        <img src="./assets/images/profile_img.jpg" alt="">
+                                    </div>
+                                    <div class="navigation__list-text">
+                                        <span class="navigation__list-name">მიხეილ გიგაური</span>
+                                        <span class="navigation__list-groupwith">Gio, Nick</span>
+                                    </div>
+                                </div>
+                                <div class="navigation__list-right">
+                                    <div class="navigation__list-status">
+                                        <span class="status__online"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                     <li class="navigation__list-item">
                         <a href="#" class="navigation__list-link">
                             <div class="navigation__list-link-inner">
@@ -403,14 +422,15 @@ let template = {
             </div>
         </aside>
     </main>
-    <div class="msgcontainer">
+    
+    <div class="msgcontainer" id="chatContainer">
         <div class="msg__header">
             <span class="msg__header__name">მიხეილ მამნიაშვილი</span>
             <div class="msg__header__rightside">
                 <button class="msg__header__rightside-item msg__header__rightside-vcall"></button>
                 <button class="msg__header__rightside-item msg__header__rightside-call"></button>
                 <button class="msg__header__rightside-item msg__header__rightside-settings"></button>
-                <button class="msg__header__rightside-item msg__header__rightside-close"></button>
+                <button class="msg__header__rightside-item msg__header__rightside-close" onclick="functions.chatClose()"></button>
             </div>
         </div>
         <div class="msg__body"></div>

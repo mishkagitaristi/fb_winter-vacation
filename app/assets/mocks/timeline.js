@@ -8,7 +8,3 @@ let newsfeed = [
     }
 ];
 
-let randomUserName = {
-    randomFirstName : ['ნიკა', 'გიგა', 'დათო'],
-    randomLastName : ['გიგაური', 'არავიაშვილი', 'მარწყვიშვილი']
-};
