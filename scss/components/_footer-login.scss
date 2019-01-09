@@ -2,25 +2,25 @@
     width: 100%;
     height: auto;
     background: color(white);
-    padding-bottom: 55px;
-    padding-top: 30px;
+    padding-bottom: 5.5em;
+    padding-top: 3em;
 
     &__list{
         display: block;
-        padding-top: 8px;
+        padding-top: 0.8em;
         & a {
             color: color(blue);
         }
     }
     &__list li{
         display: inline;
-        font-size: 12px;
+        font-size: 1.2rem;
         color: #737373;
         margin-right: 10px;
         }
     &__plus{
         position: relative;
-        padding: 2px 15px;
+        padding: 0.2rem 1.5rem;
         border: 1px solid #ccd0d5;
         border-radius: 2px;
         cursor: pointer;

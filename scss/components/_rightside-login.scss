@@ -7,8 +7,8 @@
         height: 39px;
         font-size: 1.8rem;
         outline: transparent;
-        margin-bottom: 10px;
-        padding: 10px 10px 8px 10px;
+        margin-bottom: 1rem;
+        padding: 1rem 1rem 8px 1rem;
         border-radius: 0.5rem;
         border: 1px solid #bdc7d8;
         &::placeholder{
@@ -19,7 +19,7 @@
         display: inline-block;
         color: color(text-black);
         font-size: 1.8rem;
-        margin: 10px 0 5px 0;
+        margin: 1rem 0 0.5rem 0;
     }
     &__dropdown{
         font-size: 1.3rem;
@@ -31,26 +31,26 @@
     &__bday{
         font-size: 1.1rem;
         max-width: 150px;
-        margin: 2px 0 0 10px;
+        margin: 0.2rem 0 0 1rem;
         cursor: pointer;
         color: color(blue);
     }
     &__checkbox div{
         border-radius: 4px;
         border-width: 1px;
-        padding: 5px 0 5px 4px;
+        padding: 0.5rem 0 0.5rem 0.4rem;
         &:first-child{
-            margin-right: 15px;
+            margin-right: 1.5rem;
         }
     }
     &__input{
         &--checkbox{
-            margin: 3px 3px 0px 5px;
+            margin: 0.3rem 0.3rem 0 0.5rem;
         }
     }
     &__agreement{
         width: 100%;
-        margin-top: 5px;
+        margin-top: 0.5rem;
         & p{
             color: #777;
             font-size: 1.1rem;
@@ -70,8 +70,8 @@
         text-align: center;
         text-shadow: 0 1px 2px rgba(0,0,0,.5);
         min-width: 194px;
-        margin: 20px 0; 
-        padding: 7px 20px;
+        margin: 2rem 0; 
+        padding: 0.7rem 2rem;
         cursor: pointer;
         outline: transparent;
         border-radius: 5px;
@@ -86,9 +86,9 @@
     display: block;
     border-top: 1px solid #dddfe2;;
     color: #666;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: bold;
-    padding-top: 15px;
+    padding-top: 1.5rem;
     & a {
         color: color(blue);
     }

@@ -2,15 +2,13 @@
     border-radius: 4px;
     width: 100%;
     background: color(white);
-    border: 1px solid #dddfe2;
+    border: 1px solid color(grey);
     margin-bottom: 10px;
-    
-
     &__heading{
         width: 100%;
         height: 43px;
         margin: 10px 0;
-        padding:0 12px 0 12px;
+        padding: 0 1.2em;
     }
     &__top{
         &-author{
@@ -27,7 +25,7 @@
         }
         &-heading{
             & a{
-                font-size: 14px;
+                font-size: 1.4rem;
                 font-weight: 600;
                 color: #365899;
                 &:hover{
@@ -38,7 +36,7 @@
         &-time{
             position: relative;
             & a{
-                font-size: 12px;
+                font-size: 1.2rem;
                 color: #616770;
                 &:hover{
                     text-decoration: underline;
@@ -90,6 +88,7 @@
             text-align: left;
             padding: 0 10px;
             font-size: 1.4rem;
+            font-family: 'regular';
         }
         
 
@@ -98,7 +97,7 @@
         width: 100%;
         height: 42px;
         border-bottom: 1px solid #e5e5e5;
-        padding: 5px 10px;
+        padding: 0.5em 1em;
         &-icons{
             display: flex;
             align-items: center;
@@ -117,7 +116,7 @@
         }
         &-icon{
             position: relative;
-            font-size: 13px;
+            font-size: 1.3rem;
             font-weight: 600;
             color: #616770;
             margin-left: 25px;
@@ -151,15 +150,12 @@
         }
     }
 }
-
-
-
 .center{
     &-left{
         &-icons{
             width: 20px;
             height: 20px;
-            border: 2px solid white;
+            border: 2px solid color(white);
             border-radius: 100%;
             background-image: url(../images/icons/article-third.png);
             background-repeat: no-repeat;
@@ -168,7 +164,7 @@
         &-numbers{
             width: 20px;
             height: 20px;
-            font-size: 12px;
+            font-size: 1.2rem;
             color: #606770;
             line-height: 20px;
             &:hover{
@@ -178,7 +174,7 @@
     }
     &-right{
         &-shares{
-            font-size: 12px;
+            font-size: 1.2rem;
             color: #606770;
             &:hover{
                 text-decoration: underline;
@@ -186,7 +182,6 @@
         }
     }
 }
-
 .left{
     &-icons{
         &-like{

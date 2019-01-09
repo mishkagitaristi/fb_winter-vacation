@@ -2,7 +2,7 @@
     &__sidebar{
         width: 180px;
         height: 500px;
-        margin-top: 13px;
+        margin-top: 1.3rem;
         &-image{
             display: block;
             width: 180px;
@@ -26,14 +26,14 @@
             color: color(text-light-grey);
             font-size: 1.4rem;
             font-family: "medium";
-            line-height: 16px;
-            margin-top: 4px;
+            line-height: 1.6rem;
+            margin-top: 0.4rem;
             &:hover{
                 text-decoration: underline;
             }
         }
         &-list{
-            margin-top: 12px;
+            margin-top: 1.2rem;
         }
         &-btn{
             cursor: pointer;
@@ -41,10 +41,10 @@
             font-size: 1.2rem;
             font-weight: 600;
             font-family: inherit;
-            line-height: 22px;
+            line-height: 2.2rem;
             outline: transparent;
-            padding: 0 8px;
-            margin-top: 16px;
+            padding: 0 0.8rem;
+            margin-top: 1.6rem;
             border: 1px solid #42b72a;
             border-radius: 2px;
             background-color: #42b72a;
@@ -57,17 +57,17 @@
     .sidebar-list__item{
         font-size: 1.4rem;
         font-family: "regular";
-        padding: 5px 7px;
-        margin-bottom: 2px;
+        padding: 0.5rem 0.7rem;
+        margin-bottom: 0.2rem;
         border: 1px solid transparent;
         &:hover{
-            background: #f5f6f7;
-            border: 1px solid #dddfe2;
+            background: color(light-grey);
+            border: 1px solid color(grey);
             border-radius: 2px;
         }
         &.active{
-            background: #f5f6f7;
-            border: 1px solid #dddfe2;
+            background: color(light-grey);
+            border: 1px solid color(grey);
             & a{
                 font-weight: bold;
             }

@@ -34,7 +34,7 @@
         &-link{
             display: block;
             width: 100%;
-            margin-left: 1px;
+            margin-left: 0.1em;
 
             &-inner{
                 display: flex;
@@ -43,7 +43,7 @@
                 justify-content: space-between;
                 height: 40px;
                 width: 100%;
-                padding: 0 0.7rem;
+                padding: 0 0.7em;
 
                 &:hover{
                     background-color: color(grey);
@@ -108,7 +108,7 @@
         &-status{
             display: flex;
             align-items: center;
-            margin: 0 4px 0 6px;
+            margin: 0 0.4em 0 0.6em;
         }
     }
 }
