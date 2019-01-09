@@ -10,7 +10,8 @@ let functions = {
             this.userValue() == userData.user1.login && this.passwordValue() == userData.user1.password) 
         {
             document.getElementById('render').innerHTML = template.loggedIn;
-            functions.newsFeed();
+            this.newsFeed();
+            this.userListRender();
         } else if(this.userValue() == '' || this.passwordValue() == ''){ 
             alert("WRONG INFO!");
         } else if(this.userValue() !== userData.user0.login && this.passwordValue() !== userData.user0.password ||
@@ -49,6 +50,7 @@ let functions = {
                     <a href="#" class="article__top-dots"></a>
                 </div>
             </div>
+            
             <div class="article__center fl_col">
                 <div class='article__center-text' id="postText">${newsfeed[i].timeLine}</div>
                 <div class="article__center-inner flex">
@@ -93,7 +95,43 @@ let functions = {
         functions.newsFeed();
         console.log(newsfeed);
     },
+    userListRender : function(){
+        document.getElementById('friendlist').innerHTML = '';
+        for (i = 0; i < this.randomNumber(150); i++){
+            document.getElementById('friendlist').innerHTML += 
+            `<li class="navigation__list-item" onclick="functions.chatOpen()">
+            <a href="#" class="navigation__list-link">
+                <div class="navigation__list-link-inner">
+                    <div class="navigation__list-left">
+                        <div class="navigation__list-image">
+                            <img src="./assets/images/avatars/img${functions.randomNumber(9)}.png">
+                        </div>
+                        <div class="navigation__list-text">
+                            <span class="navigation__list-name">${this.randomUserName()}</span>
+                        </div>
+                    </div>
+                    <div class="navigation__list-right">
+                        <div class="navigation__list-wave"></div>
+                        <div class="navigation__list-status">
+                            <span class="status__online"></span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>`;
+            
+        }
+    },
+    chatOpen : function(){
+        chatContainer = document.getElementById('chatContainer');
+        chatContainer.style.display = "block";
+    },
+    chatClose : function (){
+        chatContainer = document.getElementById('chatContainer');
+        chatContainer.style.display = "none";
+    }
 }
+
 
 
 
