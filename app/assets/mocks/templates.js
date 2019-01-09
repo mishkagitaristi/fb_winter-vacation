@@ -422,7 +422,6 @@ let template = {
             </div>
         </aside>
     </main>
-    
     <div class="msgcontainer" id="chatContainer">
         <div class="msg__header">
             <span class="msg__header__name">მიხეილ მამნიაშვილი</span>
