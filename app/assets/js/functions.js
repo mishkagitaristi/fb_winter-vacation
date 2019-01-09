@@ -50,6 +50,7 @@ let functions = {
                     <a href="#" class="article__top-dots"></a>
                 </div>
             </div>
+            
             <div class="article__center fl_col">
                 <div class='article__center-text' id="postText">${newsfeed[i].timeLine}</div>
                 <div class="article__center-inner flex">
