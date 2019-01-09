@@ -274,8 +274,8 @@ let template = {
             <section class="main__inner wrapper fl_jus-bet">
                 <aside class="main__sidebar">
                     <a class="main__sidebar-image" href="#"><img src="./assets/images/page_img.jpg" alt="Page Profile Photo"></a>
-                    <h2 class="main__sidebar-heading">Page Name</h2>
-                    <span class="main__sidebar-url">@PageUrl</span>
+                    <h2 class="main__sidebar-heading">ტიტველი ქათმები</h2>
+                    <span class="main__sidebar-url">@NudeChicken</span>
                     <ul class="main__sidebar-list">
                         <li class="sidebar-list__item active"><a href="#">Home</a></li>
                         <li class="sidebar-list__item"><a href="#">Posts</a></li>
@@ -291,7 +291,7 @@ let template = {
                 <section class="main__content">
                     <section class="main__cover">
                         <div class="main__cover--top">
-                            <a href="#"><img class="main__cover-image" src="#" alt="Cover Image"></a>
+                            <a href="#"><img class="main__cover-image" src="./assets/images/cover_img.png" alt="Cover Image"></a>
                         </div>
                         <div class="main__cover--bottom fl_jus-bet">
                             <div class="cover__buttons">
@@ -432,9 +432,12 @@ let template = {
                 <button class="msg__header__rightside-item msg__header__rightside-close" onclick="functions.chatClose()"></button>
             </div>
         </div>
-        <div class="msg__body"></div>
+        <div class="msg__body">
+            <div class="msg__body-text" id="sendMessage">
+            </div>
+        </div>
         <div class="msg__textarea">
-            <textarea type="text" class="msg__input" placeholder="Type a message ..."></textarea>
+            <textarea type="text" class="msg__input" placeholder="Type a message ..." id='chatTextarea'></textarea>
             <div class="msg__bottom">
                 <nav class="msg__bottom-nav">
                     <ul class="msg__bottom-nav-list">

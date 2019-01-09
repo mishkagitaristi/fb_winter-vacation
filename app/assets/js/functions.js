@@ -12,6 +12,7 @@ let functions = {
             document.getElementById('render').innerHTML = template.loggedIn;
             this.newsFeed();
             this.userListRender();
+            this.chatRender();
         } else if(this.userValue() == '' || this.passwordValue() == ''){ 
             alert("WRONG INFO!");
         } else if(this.userValue() !== userData.user0.login && this.passwordValue() !== userData.user0.password ||
@@ -50,7 +51,7 @@ let functions = {
                     <a href="#" class="article__top-dots"></a>
                 </div>
             </div>
-            
+
             <div class="article__center fl_col">
                 <div class='article__center-text' id="postText">${newsfeed[i].timeLine}</div>
                 <div class="article__center-inner flex">
@@ -93,14 +94,13 @@ let functions = {
             )
         }
         functions.newsFeed();
-        console.log(newsfeed);
     },
     userListRender : function(){
         document.getElementById('friendlist').innerHTML = '';
         for (i = 0; i < this.randomNumber(150); i++){
             document.getElementById('friendlist').innerHTML += 
             `<li class="navigation__list-item" onclick="functions.chatOpen()">
-            <a href="#" class="navigation__list-link">
+            <a href="javascript:void(0)" class="navigation__list-link">
                 <div class="navigation__list-link-inner">
                     <div class="navigation__list-left">
                         <div class="navigation__list-image">
@@ -129,6 +129,33 @@ let functions = {
     chatClose : function (){
         chatContainer = document.getElementById('chatContainer');
         chatContainer.style.display = "none";
+    },
+    chatRender : function(){
+        document.getElementById('sendMessage').innerHTML = "";
+        for (i = 0; i < chat.length; i++){
+            document.getElementById('sendMessage').innerHTML += 
+            `<p class="msg__body-message">${chat[i].message}</p>`;
+        }
+        document.getElementById('chatTextarea').addEventListener('keyup', function(e){
+            if (e.keyCode == 13) {
+              functions.chatMessage();
+            }
+        })
+        document.getElementById('chatTextarea').value = '';
+    },
+    chatMessage : function(){
+        if(functions.chatTextarea() !== '') {
+            chat.push(
+                {
+                    message : `${functions.chatTextarea()}`,
+                }
+            )
+        }
+        functions.chatRender();
+
+    },
+    chatTextarea : function(){
+        return document.getElementById('chatTextarea').value;
     }
 }
 
