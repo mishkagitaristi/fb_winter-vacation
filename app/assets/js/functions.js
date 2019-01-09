@@ -1,4 +1,7 @@
 let functions = {
+    textAreaValue : function(){
+        return document.getElementById('textarea').value;
+    },
     userValue : function () {
         return value = document.getElementById('userLogin').value;
     },
@@ -9,7 +12,7 @@ let functions = {
         if (this.userValue() == userData.user0.login && this.passwordValue() == userData.user0.password ||
             this.userValue() == userData.user1.login && this.passwordValue() == userData.user1.password) 
         {
-            document.getElementById('render').innerHTML = template.loggedIn;
+            render.innerHTML = template.loggedIn;
             this.newsFeed();
             this.userListRender();
             this.chatRender();
@@ -28,9 +31,6 @@ let functions = {
         let randomFirstName = randomUser.randomFirstName[Math.floor(Math.random()*randomUser.randomFirstName.length)];
         let randomLastName = randomUser.randomLastName[Math.floor(Math.random()*randomUser.randomLastName.length)];
         return randomFirstName + " " + randomLastName
-    },
-    textAreaValue : function(){
-        return document.getElementById('textarea').value;
     },
     newsFeed : function(){
         document.getElementById('articles').innerHTML = '';
@@ -159,9 +159,4 @@ let functions = {
     }
 }
 
-
-
-
-
-
-
+document.getElementById('render').innerHTML = template.logIn;
