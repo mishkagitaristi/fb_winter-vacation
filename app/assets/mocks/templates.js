@@ -185,6 +185,17 @@ let template = {
     </footer>`,
 
     loggedIn :
+    // <div class="profile__container">
+    //     <span class="profile__container-close"></span>
+    //     <div class="profile">
+    //         <div class="profile__leftside">
+    //             <img src="../assets/images/page_img.jpg" alt="jafara">
+    //         </div>
+    //         <div class="profile__rightside">
+                
+    //         </div>
+    //     </div>
+    // </div>
     `<header class="header">
         <section class="container fl_center">
             <section class="header__inner wrapper">
@@ -460,6 +471,7 @@ let template = {
                 </a>
             </div>
         </div>
-    </div>`
+    </div>
+    `
     
 }
