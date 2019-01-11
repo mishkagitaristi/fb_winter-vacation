@@ -26,17 +26,28 @@ let chatFunc = {
         }
     },
     chatRender : function(){
-        document.getElementById('sendMessage').innerHTML = "";
+        let sendMsg = document.getElementById('sendMessage');
+        let bodySendMsg = document.getElementById('msgBody');
+        let inputText = document.getElementById('chatTextarea');
+
+        sendMsg.innerHTML = "";
         for (i = 0; i < chatData.length; i++){
-            document.getElementById('sendMessage').innerHTML += 
-            `<p class="msg__body-message">${chatData[i].message}</p>`;
+            console.log(i,chatData);
+            sendMsg.innerHTML += 
+            `<p class="msg__body-message" id="msgBodyMessage">${chatData[i].message}</p>`;
         }
-        document.getElementById('chatTextarea').addEventListener('keyup', function(e){
-            if (e.keyCode == 13) {
+        inputText.addEventListener('keyup', function(key){
+            if (key.keyCode == 13) {
+                if(inputText.value == '') return;
                 chatFunc.chatMessage();
+                let timeOut = setTimeout(function(){
+                    clearTimeout(timeOut);
+                    bodySendMsg.scrollTop = bodySendMsg.scrollHeight;
+                },100)
+                chatFunc.chatRender();
             }
         })
-        document.getElementById('chatTextarea').value = '';
+        inputText.value = '';
     },
     chatOpen : function(){
         chatContainer = document.getElementById('chatContainer');
@@ -52,15 +63,11 @@ let chatFunc = {
         return document.getElementById('chatTextarea').value;
     },
     chatMessage : function(){
-        if(this.chatTextarea() !== '') {
-            chatData.push(
-                {
-                    message : `${this.chatTextarea()}`,
-                }
-            )
-        }
-        this.chatRender();
-
+        chatData.push(
+            {
+                message : `${this.chatTextarea()}`,
+            }
+        )
     },
     chatName : function(){
         document.getElementById('chatName').innerHTML = randomFunc.randomUser();
