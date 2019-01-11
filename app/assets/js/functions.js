@@ -17,11 +17,12 @@ let functions = {
             this.userListRender();
             this.chatRender();
         } else if(this.userValue() == '' || this.passwordValue() == ''){ 
-            alert("WRONG INFO!");
+            alert("incorrect username or password or empty input(we can't tell it :D )");
         } else if(this.userValue() !== userData.user0.login && this.passwordValue() !== userData.user0.password ||
                   this.userValue() !== userData.user1.login && this.passwordValue() !== userData.user1.password) 
         {
-            alert('do you speak English motherfucker? do you speak it?!');
+            var snd = new Audio('./assets/audio/haha.mp3');
+            snd.play();
         }
     },
     randomNumber : function(num){
