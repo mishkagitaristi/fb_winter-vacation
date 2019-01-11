@@ -1,5 +1,5 @@
-let userData = {
-    user0 : {
+let userData = [
+    {
         firstName : 'მიხეილ',
         lastName : 'მამნიაშვილი',
         login : '1',
@@ -9,9 +9,8 @@ let userData = {
             day : '22',
             year : '1994'
             },
-        gender : 'true'
-    },
-    user1 : {
+        gender : 'male'
+    },{
         firstName : 'მიშო',
         lastName : 'გიგაური',
         login : '2',
@@ -21,9 +20,9 @@ let userData = {
             day : '15',
             year : '1996'
             },
-        gender : 'true'
+        gender : 'male'
     }
-}
+]
 
 let randomUser = {
     randomFirstName : ['ნიკა', 'გიგა', 'დათო','გოჩა','სოსო','გივი','გური','ნანა','ნელი','ქეთო','ვიგა','მარი'],

@@ -14,7 +14,7 @@ let template = {
                 <a class="auth__link" href="#">Forgot account?</a>
             </div>
             <div class="auth__item auth--btn fl_center">
-                <button class="auth__btn" id="loginBtn" onclick="functions.logInBtn()">Log In</button>
+                <button class="auth__btn" id="loginBtn" onclick="authFunc.logIn()">Log In</button>
             </div>
         </div>
     </div>
@@ -37,14 +37,14 @@ let template = {
                 <span class="main-login__text">It’s free and always will be.</span>
                 <div class="main-login__form fl_col">
                     <div class="flex">
-                        <input class="form__input" style="margin-right:10px" type="text" placeholder="First name" required>
-                        <input class="form__input" type="text" placeholder="Last name" required>
+                        <input id="regfirstName" class="form__input" style="margin-right:10px" type="text" placeholder="First name" required>
+                        <input id="reglastName" class="form__input" type="text" placeholder="Last name" required>
                     </div>
-                    <input class="form__input" type="email" placeholder="Mobile number or email" required>
-                    <input class="form__input" type="password" placeholder="New password" required>
+                    <input id="regEmail" class="form__input" type="email" placeholder="Mobile number or email" required>
+                    <input id="regPassword" class="form__input" type="password" placeholder="New password" required>
                     <span class="form__heading">Birthday</span>
                     <div class="flex">
-                        <select class="form__dropdown" title="Month">
+                        <select id="regMonth" class="form__dropdown" title="Month">
                             <option value="0">Month</option>
                             <option value="1">Jan</option>
                             <option value="2">Feb</option>
@@ -59,7 +59,7 @@ let template = {
                             <option value="11" selected="1">Nov</option>
                             <option value="12">Dec</option>
                         </select>
-                        <select class="form__dropdown" title="Day">
+                        <select id="regDay" class="form__dropdown" title="Day">
                             <option value="0">Day</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -93,7 +93,7 @@ let template = {
                             <option value="30">30</option>
                             <option value="31">31</option>
                         </select>
-                        <select class="form__dropdown" title="Year">
+                        <select id="regYear" class="form__dropdown" title="Year">
                             <option value="0">Year</option>
                             <option value="1" selected="1">1993</option>
                             <option value="2">1994</option>
@@ -110,12 +110,12 @@ let template = {
                     </div>
                     <div class="form__checkbox flex">
                         <div>
-                            <input class="form__input--checkbox" type="radio">
-                            <span class="form__heading">Female</span>
+                            <input type="radio" name="gender" class="form__input--checkbox" value="female">
+                            <label for="female" class="form__heading">Female</label>
                         </div>
                         <div>
-                            <input class="form__input--checkbox" type="radio">
-                            <span class="form__heading">Male</span>
+                            <input type="radio" name="gender" class="form__input--checkbox" value="male">
+                            <label for="male" class="form__heading">Male</label>
                         </div>
                     </div>
                     <div class="form__agreement">
@@ -125,7 +125,7 @@ let template = {
                             <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.
                         </p>
                     </div>
-                    <button class="form__btn">Sign Up</button>
+                    <button onclick="reg.signUp()" class="form__btn">Sign Up</button>
                     <div class="reg_pages_msg">
                         <a href="#">Create a Page</a>  for a celebrity, band or business.
                     </div>
@@ -250,7 +250,7 @@ let template = {
                             <i class="right-icons right-icons-help"></i>
                         </a>
                         <a href="#" class="header__inner-right-icons">
-                            <i class="right-icons right-icons-dropdown"></i>
+                            <i class="right-icons right-icons-dropdown" onclick="authFunc.logOut()"></i>
                         </a>
                     </div>
 
@@ -338,7 +338,7 @@ let template = {
                                     <a href="#" class="articles__post-bottom-icon icons_photo-video">Photo/Video</a>
                                     <a href="#" class="articles__post-bottom-icon icons_tag-friends">Tag Friends</a>
                                     <a href="#" class="articles__post-bottom-icon icons_feeling-activity">Feeling/Activ...</a>
-                                    <a href="javascript:void(0)" class="articles__post-button" onclick="functions.articlePost()">Post</a>
+                                    <a href="javascript:void(0)" class="articles__post-button" onclick="timelineFunc.articlePost()">Post</a>
                                 </div>
                             </div>
                             <div id="articles" style="width:100%;display:flex;flex-direction:column-reverse"></div>
@@ -438,7 +438,7 @@ let template = {
                 <button class="msg__header__rightside-item msg__header__rightside-vcall"></button>
                 <button class="msg__header__rightside-item msg__header__rightside-call"></button>
                 <button class="msg__header__rightside-item msg__header__rightside-settings"></button>
-                <button class="msg__header__rightside-item msg__header__rightside-close" onclick="functions.chatClose()"></button>
+                <button class="msg__header__rightside-item msg__header__rightside-close" onclick="chatFunc.chatClose()"></button>
             </div>
         </div>
         <div class="msg__body">

@@ -1,4 +1,4 @@
-let chat = [
+let chatData = [
     {
         message : 'rogor xar?'
     },{
