@@ -1,14 +1,14 @@
 let chatData = [
     {
-        message : 'rogor xar?'
+        message : 'როგორ ხარ?'
     },{
-        message : 'ras shvebi?'
+        message : 'რას შვრები?'
     },{
-        message : 'sad daikarge?'
+        message : 'სად დაიკარგე?'
     },{
-        message : 'shenebi momikitxe'
+        message : 'შენები მომიკითხე :*'
     },{
-        message : 'yvelaze tvinistyvna kitxvebis top4'
+        message : 'ყველაზე ტვინისტყვნა კითხვების Top4'
     },{
         message : 'წინა მეხუთე იყო'
     }

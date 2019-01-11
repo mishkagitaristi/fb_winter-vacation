@@ -441,7 +441,7 @@ let template = {
                 <button class="msg__header__rightside-item msg__header__rightside-close" onclick="chatFunc.chatClose()"></button>
             </div>
         </div>
-        <div class="msg__body">
+        <div class="msg__body" id="msgBody">
             <div class="msg__body-text" id="sendMessage">
             </div>
         </div>
