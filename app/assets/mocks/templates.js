@@ -433,7 +433,7 @@ let template = {
     </main>
     <div class="msgcontainer" id="chatContainer">
         <div class="msg__header">
-            <span class="msg__header__name">მიხეილ მამნიაშვილი</span>
+            <span class="msg__header__name" id="chatName"></span>
             <div class="msg__header__rightside">
                 <button class="msg__header__rightside-item msg__header__rightside-vcall"></button>
                 <button class="msg__header__rightside-item msg__header__rightside-call"></button>

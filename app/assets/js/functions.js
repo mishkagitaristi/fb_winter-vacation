@@ -125,6 +125,8 @@ let functions = {
     chatOpen : function(){
         chatContainer = document.getElementById('chatContainer');
         chatContainer.style.display = "block";
+        this.msgName();
+
     },
     chatClose : function (){
         chatContainer = document.getElementById('chatContainer');
@@ -156,6 +158,9 @@ let functions = {
     },
     chatTextarea : function(){
         return document.getElementById('chatTextarea').value;
+    },
+    msgName : function(){
+        document.getElementById('chatName').innerHTML = this.randomUser();
     }
 }
 
