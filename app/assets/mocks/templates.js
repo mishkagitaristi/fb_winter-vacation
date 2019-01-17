@@ -182,20 +182,24 @@ let template = {
             </ul>
             <div class="copyright">Facebook © 2018</div>
         </div>
-    </footer>`,
+    </footer>
+    <div class="profileTop">
+        <div class="profileTop__container">
+            <div class="profileTop__container__exit"></div>
+            <img src="../assets/images/profile__top.jpg" alt="profile image top" class="profileTop__container__image">
+            <h3 class="profileTop__container__username">Mixeil Mamniashvili</h3>
+            <input type="password" class="profileTop__container__password" placeholder="Password" autofocus/>
+            <div class="profileTop__container__remember">
+                <input type="checkbox" class="profileTop__container__remember-checkbox"></input>
+                <span class="profileTop__container__remember-text">Remember password</span>
+            </div>
+            <button class="profileTop__container__login">Log In</button>
+            <span class="profileTop__container__forgotPass">Forgot password?</span>
+        </div>
+    </div>
+    `,
 
     loggedIn :
-    // <div class="profile__container">
-    //     <span class="profile__container-close"></span>
-    //     <div class="profile">
-    //         <div class="profile__leftside">
-    //             <img src="../assets/images/page_img.jpg" alt="jafara">
-    //         </div>
-    //         <div class="profile__rightside">
-                
-    //         </div>
-    //     </div>
-    // </div>
     `<header class="header">
         <section class="container fl_center">
             <section class="header__inner wrapper">

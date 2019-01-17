@@ -1,0 +1,112 @@
+.profileTop{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 12;
+    top: 0;
+
+    &__container{
+        width: 300px;
+        height: auto;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: 150px;
+        left: calc(50% - 150px);
+        &__exit {
+            background-image: url(../images/icons/profile-second.png);
+            background-position: 0 -2016px;
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 12px;
+            width: 12px;
+            align-self: flex-end;
+            &:hover{
+                cursor: pointer;
+                background-image: url(../images/icons/profile-second.png);
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: -26px -2016px;
+            }
+        }
+        &__image{
+            width: 160px;
+            height: 160px;
+            border-radius: 4px;
+        }
+        &__username{
+            padding-top: 8px;
+            padding-bottom: 12px;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+        &__password{
+            width: 248px;
+            height: 32px;
+            padding: 0 8px;
+            margin: 0 auto 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 2px;
+            color: #1d2129;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        &__remember{
+            align-self: flex-start;
+            margin-left: 13px;
+            &-checkbox{
+                background: #fff;
+            }
+            &-text{
+                color: #666666;
+                font-size: 1.2rem;
+                line-height: 18px;
+            }
+        }
+        &__login{
+            width: 232px;
+            line-height: 3.4rem;
+            padding: 0 16px;
+            margin: 12px 6px 12px 6px;
+            background-color: #4267b2;
+            border-radius: 2px;
+            border: 1px solid #4267b2;
+            color: #fff;
+            box-sizing: content-box;
+            font-size: 1.2rem;
+            vertical-align: middle;
+            &:hover{
+                cursor: pointer;
+                background-color: #365899;
+                border-color: #365899;
+                transition: 200ms cubic-bezier(.08,.52,.52,1) 
+                background-color, 200ms cubic-bezier(.08,.52,.52,1) 
+                box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+            }
+            
+        }
+        &__forgotPass{
+            cursor: pointer;
+            font-size: 13px;
+            color: #365899;
+            text-align: center;
+            line-height: 18px;
+            &:hover{
+                text-decoration: underline;
+            }
+            &::before{
+                content: "";
+                display: block;
+                width: 260px;
+                border-top: 1px solid #d9d9d9;
+                padding-top: 12px;
+            }
+        }
+    }
+}
