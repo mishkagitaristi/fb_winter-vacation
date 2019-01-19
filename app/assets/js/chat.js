@@ -72,5 +72,15 @@ let chatFunc = {
     chatName : function(){
         let chatName = document.getElementById('chatName');
         chatName.innerHTML = randomFunc.randomUser();
+        
+    },
+    messageMinimize : function(){
+        let chatContainer = document.getElementById('chatContainer');
+        if(chatContainer.style.bottom != "-307px"){
+            chatContainer.style.bottom = "-307px";
+        }else{
+            chatContainer.style.bottom = '0';
+            
+        }
     }
 }

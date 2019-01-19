@@ -3,19 +3,43 @@ let reg = {
     userStatus : true,
     getFirstName : function() {
         let regfirstName = document.getElementById('regfirstName');
-        return regfirstName.value;
+
+        if(regfirstName.value == ''){
+            regfirstName.style.borderColor = "#ff0000";
+        }else{
+            regfirstName.style.borderColor = "#bdc7d8";
+            return regfirstName.value;
+        }
     },
     getlastName : function() {
         let reglastName = document.getElementById('reglastName');
-        return reglastName.value;
+        
+        if(reglastName.value == ''){
+            reglastName.style.borderColor = "#ff0000";
+        }else{
+            reglastName.style.borderColor = "#bdc7d8";
+            return reglastName.value;
+        }
     },
     getEmail : function() {
         let regEmail = document.getElementById('regEmail');
-        return regEmail.value;
+        
+        if(regEmail.value == ''){
+            regEmail.style.borderColor = "#ff0000";
+        }else{
+            regEmail.style.borderColor = "#bdc7d8";
+            return regEmail.value;
+        }
     },
     getPassword : function() {
         let regPassword = document.getElementById('regPassword');
-        return regPassword.value;
+        
+        if(regPassword.value == ''){
+            regPassword.style.borderColor = "#ff0000";
+        }else{
+            regPassword.style.borderColor = "#bdc7d8";
+            return regPassword.value;
+        }
     },
     getMonth : function() {
         let regMonth = document.getElementById('regMonth');
@@ -34,19 +58,39 @@ let reg = {
     },
     getGender : function() {
         let gender = document.getElementsByName('gender');
+        let checkbox = document.querySelectorAll('.form__gender');
         for (let i = 0; i < gender.length ; i++){
             if (gender[i].checked){
+                checkbox[0].style.borderColor = "transparent";
+                checkbox[1].style.borderColor = "transparent";
                 return gender[i].value;
+            }else{
+                checkbox[i].style.borderColor = "#ff0000";
             }
         }
     },
-    signUp : function() {
+    signUp : function() {     
         for(let i = 1; i < users.storage.length; i++){
             if(this.getEmail() == users.storage[i].login){
                 this.userStatus = false;
                 break;
             }
         }
+        if( this.getFirstName() == undefined ||
+            this.getlastName() == undefined ||
+            this.getEmail() == undefined ||
+            this.getPassword() == undefined ||
+            this.getGender() == undefined){
+                this.getFirstName()
+                this.getlastName()
+                this.getEmail()
+                this.getPassword()
+                this.getGender()
+                this.userStatus = false;
+        }else{
+            this.userStatus = true;
+
+        };
         if (this.userStatus == true) {
             users.storage.push(
                 {
@@ -68,8 +112,6 @@ let reg = {
             this.render.innerHTML = template.logIn;
             location.reload();
             users.resetStorage();
-        } else{
-            alert("O.o Something Went Wrong!!!");
         }
     }
 }

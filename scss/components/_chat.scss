@@ -16,6 +16,7 @@
 }
 .msg{
     &__header{
+        cursor: pointer;
         height: 26px;
         background-color: color(light-grey);
         border-radius: 5px 5px 0 0;

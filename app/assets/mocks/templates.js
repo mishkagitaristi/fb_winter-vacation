@@ -104,11 +104,11 @@ let template = {
                         <a class="form__bday">Why do I need to provide my birthday?</a>
                     </div>
                     <div class="form__checkbox flex">
-                        <div>
+                        <div class="form__gender">
                             <input type="radio" name="gender" class="form__input--checkbox" value="female">
                             <label for="female" class="form__heading">Female</label>
                         </div>
-                        <div>
+                        <div class="form__gender">
                             <input type="radio" name="gender" class="form__input--checkbox" value="male">
                             <label for="male" class="form__heading">Male</label>
                         </div>
@@ -431,7 +431,7 @@ let template = {
         </aside>
     </main>
     <div class="msgcontainer" id="chatContainer">
-        <div class="msg__header">
+        <div class="msg__header" id="messageHeader" onclick="chatFunc.messageMinimize()">
             <span class="msg__header__name" id="chatName"></span>
             <div class="msg__header__rightside">
                 <button class="msg__header__rightside-item msg__header__rightside-vcall"></button>
