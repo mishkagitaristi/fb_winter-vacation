@@ -1,5 +1,5 @@
 let template = {
-    logIn : 
+    logIn :
     `<header class="header-login">
     <div class="wrapper-login fl_jus-bet">
         <h1><a class="header-login__logo" href="index.html" title="Go to Facebook Home"></a></h1>
@@ -14,7 +14,7 @@ let template = {
                 <a class="auth__link" href="#">Forgot account?</a>
             </div>
             <div class="auth__item auth--btn fl_center">
-                <button class="auth__btn" id="loginBtn" onclick="authFunc.logIn()">Log In</button>
+                <button class="auth__btn" onclick="load.logIn()">Log In</button>
             </div>
         </div>
     </div>
@@ -125,7 +125,7 @@ let template = {
                             <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.
                         </p>
                     </div>
-                    <button onclick="reg.signUp()" class="form__btn">Sign Up</button>
+                    <button class="form__btn" onclick="reg.signUp()">Sign Up</button>
                     <div class="reg_pages_msg">
                         <a href="#">Create a Page</a>  for a celebrity, band or business.
                     </div>
@@ -186,7 +186,7 @@ let template = {
     <div class="profileTop">
         <div class="profileTop__container">
             <div class="profileTop__container__exit"></div>
-            <img src="../assets/images/profile__top.jpg" alt="profile image top" class="profileTop__container__image">
+            <img src="../app/assets/images/profile__top.jpg" alt="profile image top" class="profileTop__container__image">
             <h3 class="profileTop__container__username">Mixeil Mamniashvili</h3>
             <input type="password" class="profileTop__container__password" placeholder="Password" autofocus/>
             <div class="profileTop__container__remember">
@@ -218,8 +218,8 @@ let template = {
                     <!-- HEADER RIGHT FIRST PART -->
                     <div class="header__inner-right-item">
                         <a href="#" class="header__inner-right-link">
-                            <img class="header__inner-right-image" src="./assets/images/profile_img.jpg" alt="Profile">
-                            <span class="header__inner-right-text">მიხეილ</span>
+                            <img class="header__inner-right-image profile__img" alt="Profile">
+                            <span class="header__inner-right-text">${users.storage[localStorage.getItem('currentUser')].firstName+' '+users.storage[localStorage.getItem('currentUser')].lastName}</span>
                         </a>
                         <span class="header__inner-right-border"></span>
                     </div>
@@ -254,7 +254,7 @@ let template = {
                             <i class="right-icons right-icons-help"></i>
                         </a>
                         <a href="#" class="header__inner-right-icons">
-                            <i class="right-icons right-icons-dropdown" onclick="authFunc.logOut()"></i>
+                            <i class="right-icons right-icons-dropdown" onclick="load.logOut()"></i>
                         </a>
                     </div>
 
@@ -331,7 +331,7 @@ let template = {
                                 </div>
                                 <div class="section-articles__post-center">
                                     <div class="section-articles__post-center-profile">
-                                        <img src="./assets/images/profile_img.jpg" alt="Profile Image" width="40px" height="40px">
+                                        <img class="profile__img" width="40px" height="40px" alt="Profile Image">
                                     </div>
                                     <form action="#" class="section-articles__post-center-form">
                                         <textarea id="textarea" name="articles__post" placeholder="What's on your mind, მიხეილ?"></textarea>

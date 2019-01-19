@@ -1,4 +1,6 @@
 let reg = {
+    render : document.getElementById('render'),
+    userStatus : true,
     getFirstName : function() {
         let regfirstName = document.getElementById('regfirstName');
         return regfirstName.value;
@@ -39,21 +41,33 @@ let reg = {
         }
     },
     signUp : function() {
-        userData.push(
-            {
-                firstName : `${this.getFirstName()}`,
-                lastName : `${this.getlastName()}`,
-                login : `${this.getEmail()}`,
-                password : `${this.getPassword()}`,
-                birthDay : {
-                    month : `${this.getMonth()}`,
-                    day : `${this.getDay()}`,
-                    year : `${this.getYear()}`
-                    },
-                gender : `${this.getGender()}`
+        for(let i = 0; i < users.storage.length; i++){
+            if(this.getEmail() == users.storage[i].login){
+                this.userStatus = false;
+                break;
             }
-        )
-        document.getElementById('render').innerHTML = template.logIn;
+        }
+        if (this.userStatus == true) {
+            users.storage.push(
+                {
+                    firstName : `${this.getFirstName()}`,
+                    lastName : `${this.getlastName()}`,
+                    login : `${this.getEmail()}`,
+                    password : `${this.getPassword()}`,
+                    birthDay : {
+                        month : `${this.getMonth()}`,
+                        day : `${this.getDay()}`,
+                        year : `${this.getYear()}`
+                        },
+                    gender : `${this.getGender()}`
+                }
+            );
+            alert("You have been successfully registered ^_^");
+            this.render.innerHTML = template.logIn;
+            users.resetStorage();
+        } else{
+            alert("O.o Something Went Wrong!!!");
+        }
     }
 }
 

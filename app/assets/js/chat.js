@@ -1,6 +1,7 @@
 let chatFunc = {
     userListRender : function(){
-        document.getElementById('friendlist').innerHTML = '';
+        let friendlist = document.getElementById('friendlist');
+        friendlist.innerHTML = '';
         for (i = 0; i < randomFunc.randomNumber(150); i++){
             document.getElementById('friendlist').innerHTML += 
             `<li class="navigation__list-item" onclick="chatFunc.chatOpen()">
@@ -32,7 +33,6 @@ let chatFunc = {
 
         sendMsg.innerHTML = "";
         for (i = 0; i < chatData.length; i++){
-            console.log(i,chatData);
             sendMsg.innerHTML += 
             `<p class="msg__body-message" id="msgBodyMessage">${chatData[i].message}</p>`;
         }
@@ -50,13 +50,13 @@ let chatFunc = {
         inputText.value = '';
     },
     chatOpen : function(){
-        chatContainer = document.getElementById('chatContainer');
+        let chatContainer = document.getElementById('chatContainer');
         chatContainer.style.display = "block";
         this.chatName();
 
     },
     chatClose : function (){
-        chatContainer = document.getElementById('chatContainer');
+        let chatContainer = document.getElementById('chatContainer');
         chatContainer.style.display = "none";
     },
     chatTextarea : function(){
@@ -70,6 +70,7 @@ let chatFunc = {
         )
     },
     chatName : function(){
-        document.getElementById('chatName').innerHTML = randomFunc.randomUser();
+        let chatName = document.getElementById('chatName');
+        chatName.innerHTML = randomFunc.randomUser();
     }
 }

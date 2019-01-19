@@ -1,4 +1,5 @@
-let userData = [
+let defaultUser = [
+    {},
     {
         firstName : 'მიხეილ',
         lastName : 'მამნიაშვილი',
@@ -9,22 +10,27 @@ let userData = [
             day : '22',
             year : '1994'
             },
-        gender : 'male'
-    },{
-        firstName : 'მიშო',
-        lastName : 'გიგაური',
-        login : '2',
-        password : '2',
-        birthDay : {
-            month : '9',
-            day : '15',
-            year : '1996'
-            },
-        gender : 'male'
+        gender : 'male',
     }
 ]
 
+let users = {
+    storage: JSON.parse(localStorage.getItem("users")),
+    check: function(){
+        if(users.storage == null){
+            let usersStorage = [];
+            usersStorage.push(defaultUser[1]);
+            localStorage.setItem("users", JSON.stringify(defaultUser));
+            users.storage = JSON.parse(localStorage.getItem("users"));
+        }
+    },
+    resetStorage: function(){
+        localStorage.removeItem("users");
+        localStorage.setItem("users", JSON.stringify(this.storage));
+    }
+}
+
 let randomUser = {
-    randomFirstName : ['ნიკა', 'გიგა', 'დათო','გოჩა','სოსო','გივი','გური','ნანა','ნელი','ქეთო','ვიგა','მარი'],
-    randomLastName : ['გიგაური','Smith', 'ალუბლაძე','კირთაძე','მამოიანი','Barney', 'ჰაეს?']
+    randomFirstName : ['ნიკა', 'გიგა','ნინო','ვერო','გოჩა','სოსო','გივი','ქეთო'],
+    randomLastName : ['გიგაური','კარელიძე','კირთაძე','მამოიანი','პარუნოვი','ავალიანი','ჯიბუტი']
 };
