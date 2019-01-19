@@ -71,6 +71,9 @@ input[type=number]::-webkit-outer-spin-button {
 .flex {
   display: flex; }
 
+.fl_wrap {
+  flex-wrap: wrap; }
+
 .fl_center {
   display: flex;
   align-items: center;
@@ -244,7 +247,8 @@ input[type=number]::-webkit-outer-spin-button {
   height: auto;
   padding: 2rem 0 5.3rem 0; }
   .main-login--left {
-    padding-right: 4.8rem; }
+    padding-right: 4.8rem;
+    max-width: 570px; }
   .main-login__heading {
     color: #333;
     font-size: 3.5rem;
@@ -258,17 +262,23 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 126%;
     font-family: 'regular';
     margin-bottom: 2rem; }
+  .main-login__recent {
+    display: flex;
+    flex-wrap: wrap; }
 
 .recent__item {
   position: relative;
   display: block;
   width: 160px;
-  height: auto;
-  margin: 0 1.7rem 0 0;
+  height: 206px;
+  margin-right: 1.7rem;
+  margin-bottom: 2rem;
   border-radius: 0.4rem;
   background: #fff;
   box-shadow: 0 0 0 1px #dddfe2;
   transition: all .2s ease-out; }
+  .recent__item:nth-child(3), .recent__item:nth-child(6), .recent__item:nth-child(9) {
+    margin-right: 0; }
   .recent__item:hover {
     box-shadow: 0 1px 10px 7px #dddfe2; }
   .recent__item:hover > .recent__btn {

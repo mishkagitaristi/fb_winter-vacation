@@ -41,7 +41,7 @@ let reg = {
         }
     },
     signUp : function() {
-        for(let i = 0; i < users.storage.length; i++){
+        for(let i = 1; i < users.storage.length; i++){
             if(this.getEmail() == users.storage[i].login){
                 this.userStatus = false;
                 break;
@@ -59,11 +59,14 @@ let reg = {
                         day : `${this.getDay()}`,
                         year : `${this.getYear()}`
                         },
-                    gender : `${this.getGender()}`
+                    gender : `${this.getGender()}`,
+                    timline : [],
+                    profileImage : []
                 }
             );
             alert("You have been successfully registered ^_^");
             this.render.innerHTML = template.logIn;
+            location.reload();
             users.resetStorage();
         } else{
             alert("O.o Something Went Wrong!!!");

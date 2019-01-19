@@ -1,6 +1,9 @@
 .flex{
     display: flex;
 }
+.fl_wrap{
+    flex-wrap: wrap;
+}
 .fl_center{
     display: flex;
     align-items: center;

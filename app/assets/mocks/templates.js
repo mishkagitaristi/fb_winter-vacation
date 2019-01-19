@@ -24,12 +24,7 @@ let template = {
             <div class="main-login--left">
                 <h3 class="main-login__heading">Recent Logins</h3>
                 <span class="main-login__text">Click your picture or add an account.</span>
-                <div class="main-login__recent">
-                    <a class="recent__item" href="#">
-                        <div class="recent__noimg"></div>
-                        <span class="recent__name blue">Add Account</span>
-                    </a>
-                </div>
+                <div class="main-login__recent flex" id="fastLogin"></div>
             </div>
             
             <div class="main-login--right">
@@ -46,7 +41,7 @@ let template = {
                     <div class="flex">
                         <select id="regMonth" class="form__dropdown" title="Month">
                             <option value="0">Month</option>
-                            <option value="1">Jan</option>
+                            <option value="1" selected="1">Jan</option>
                             <option value="2">Feb</option>
                             <option value="3">Mar</option>
                             <option value="4">Apr</option>
@@ -56,7 +51,7 @@ let template = {
                             <option value="8">Aug</option>
                             <option value="9">Sep</option>
                             <option value="10">Oct</option>
-                            <option value="11" selected="1">Nov</option>
+                            <option value="11">Nov</option>
                             <option value="12">Dec</option>
                         </select>
                         <select id="regDay" class="form__dropdown" title="Day">
@@ -80,12 +75,12 @@ let template = {
                             <option value="17">17</option>
                             <option value="18">18</option>
                             <option value="19">19</option>
-                            <option value="20">20</option>
+                            <option value="20" selected="1">20</option>
                             <option value="21">21</option>
                             <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option>
-                            <option value="25" selected="1">25</option>
+                            <option value="25">25</option>
                             <option value="26">26</option>
                             <option value="27">27</option>
                             <option value="28">28</option>
@@ -95,8 +90,8 @@ let template = {
                         </select>
                         <select id="regYear" class="form__dropdown" title="Year">
                             <option value="0">Year</option>
-                            <option value="1" selected="1">1993</option>
-                            <option value="2">1994</option>
+                            <option value="1">1993</option>
+                            <option value="2" selected="1">1994</option>
                             <option value="3">1995</option>
                             <option value="4">1996</option>
                             <option value="5">1997</option>
@@ -183,17 +178,17 @@ let template = {
             <div class="copyright">Facebook © 2018</div>
         </div>
     </footer>
-    <div class="profileTop">
+    <div class="profileTop" id="profileTop">
         <div class="profileTop__container">
-            <div class="profileTop__container__exit"></div>
-            <img src="../app/assets/images/profile__top.jpg" alt="profile image top" class="profileTop__container__image">
-            <h3 class="profileTop__container__username">Mixeil Mamniashvili</h3>
-            <input type="password" class="profileTop__container__password" placeholder="Password" autofocus/>
+            <div class="profileTop__container__exit" onclick="fastLogIn.loginClose()"></div>
+            <img id="popupImage" class="profileTop__container__image" alt="profile image top">
+            <h3 class="profileTop__container__username" id="profileTopName"></h3>
+            <input type="password" class="profileTop__container__password" id='popupPassword' placeholder="Password" autofocus/>
             <div class="profileTop__container__remember">
                 <input type="checkbox" class="profileTop__container__remember-checkbox"></input>
                 <span class="profileTop__container__remember-text">Remember password</span>
             </div>
-            <button class="profileTop__container__login">Log In</button>
+            <button class="profileTop__container__login" id="popupLoginBtn">Log In</button>
             <span class="profileTop__container__forgotPass">Forgot password?</span>
         </div>
     </div>
@@ -219,7 +214,7 @@ let template = {
                     <div class="header__inner-right-item">
                         <a href="#" class="header__inner-right-link">
                             <img class="header__inner-right-image profile__img" alt="Profile">
-                            <span class="header__inner-right-text">${users.storage[localStorage.getItem('currentUser')].firstName+' '+users.storage[localStorage.getItem('currentUser')].lastName}</span>
+                            <span class="header__inner-right-text" id="defaultUserName"></span>
                         </a>
                         <span class="header__inner-right-border"></span>
                     </div>

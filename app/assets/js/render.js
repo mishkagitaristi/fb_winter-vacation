@@ -14,6 +14,7 @@ let load = {
         if(this.userIndex == this.currentUser){
             this.render.innerHTML = template.logIn;
             // ფუნქციები რაც უნდა ჩაიტვირთოს დალოგინებამდე
+            fastLogIn.userLoginRender();
             users.check();
         }else{
             this.render.innerHTML = template.loggedIn;
@@ -22,7 +23,12 @@ let load = {
             chatFunc.userListRender();
             chatFunc.chatRender();
             imgFunc.profileImg();
+            this.defaultUserName();
         }
+    },
+    defaultUserName: function(){
+        let defaultUserName = document.getElementById('defaultUserName');
+        defaultUserName.innerHTML = users.storage[this.currentUser].firstName+' '+users.storage[this.currentUser].lastName
     },
     logIn : function() {
         for (let i = 0; i < users.storage.length; i++){

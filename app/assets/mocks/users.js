@@ -1,17 +1,17 @@
 let defaultUser = [
     {},
-    {
-        firstName : 'მიხეილ',
-        lastName : 'მამნიაშვილი',
-        login : '1',
-        password : '1',
-        birthDay : {
-            month : '4',
-            day : '22',
-            year : '1994'
-            },
-        gender : 'male',
-    }
+    // {
+    //     firstName : 'მიხეილ',
+    //     lastName : 'მამნიაშვილი',
+    //     login : '1',
+    //     password : '1',
+    //     birthDay : {
+    //         month : '4',
+    //         day : '22',
+    //         year : '1994'
+    //         },
+    //     gender : 'male',
+    // }
 ]
 
 let users = {
